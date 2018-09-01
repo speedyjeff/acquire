@@ -1,6 +1,6 @@
 # Acquire
 
-Acquire is a game of coporation building and merging.  The object of the game is to have the highest net worth which consists of cash and stock held in corporations.
+Acquire is a game of corporation building and merging.  The object of the game is to have the highest net worth which consists of cash and stock held in corporations.
 
 There are seven corporations that can be built to conquer the corporate landscape.
 
@@ -31,14 +31,14 @@ There are seven corporations that can be built to conquer the corporate landscap
 ```
 
 ## Rules
-* Holding the first or second most shares in a coorporation before a merge offers you a bonus
-* Only seven coorporations may be active at any given time
-* Coorporations cannot merge once they have more than 41 squares occuipied
-* A coorporation must consist of at least 2 building blocks
+* Holding the first or second most shares in a corporation before a merge offers you a bonus
+* Only seven corporations may be active at any given time
+* Corporations cannot merge once they have more than 41 squares occupied
+* A corporation must consist of at least 2 building blocks
 * The turn consists of ....
-  * Placing a building block (which may create a new coorporation, expand an existing coorporation, merge a corporation, or be seperate)
+  * Placing a building block (which may create a new corporation, expand an existing corporation, merge a corporation, or be separate)
   * (optional) Dealing with a merger (trading or selling shares)
-  * Buyig stock in a coorporation that has available shares
+  * Buying stock in a corporation that has available shares
 
 ## Game play
 
