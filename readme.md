@@ -13,7 +13,7 @@ There are seven corporations that can be built to conquer the corporate landscap
 * (G)rape
 * (F)rozen
 
-`
+```
   A      C      F    Stock  Majority  Minority
   B      D      G    Value  Bonus     Bonus
          E
@@ -28,7 +28,7 @@ There are seven corporations that can be built to conquer the corporate landscap
 41..   21-40  12-20  $1400  $ 8400    $4200
   -    41..   21-40  $1600  $10600    $5300
   -      -    41..   $1800  $12000    $6000
-`
+```
 
 ## Rules
 * Holding the first or second most shares in a coorporation before a merge offers you a bonus
