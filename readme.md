@@ -5,14 +5,15 @@ Acquire is a game of coporation building and merging.  The object of the game is
 There are seven corporations that can be built to conquer the corporate landscape.
 
 ## Corporations
- (A)pple
- (B)erry
- (C)anary
- (D)rip
- (E)asy
- (G)rape
- (F)rozen
+* (A)pple
+* (B)erry
+* (C)anary
+* (D)rip
+* (E)asy
+* (G)rape
+* (F)rozen
 
+`
   A      C      F    Stock  Majority  Minority
   B      D      G    Value  Bonus     Bonus
          E
@@ -27,17 +28,19 @@ There are seven corporations that can be built to conquer the corporate landscap
 41..   21-40  12-20  $1400  $ 8400    $4200
   -    41..   21-40  $1600  $10600    $5300
   -      -    41..   $1800  $12000    $6000
-
+`
 
 ## Rules
-Holding the first or second most shares in a coorporation before a merge offers you a bonus
-Only seven coorporations may be active at any given time
-Coorporations cannot merge once they have more than 41 squares occuipied
-A coorporation must consist of at least 2 building blocks
-The turn consists of ....
-  Placing a building block (which may create a new coorporation, expand an existing coorporation, merge a corporation, or be seperate)
-  (optional) Dealing with a merger (trading or selling shares)
-  Buyig stock in a coorporation that has available shares
+* Holding the first or second most shares in a coorporation before a merge offers you a bonus
+* Only seven coorporations may be active at any given time
+* Coorporations cannot merge once they have more than 41 squares occuipied
+* A coorporation must consist of at least 2 building blocks
+* The turn consists of ....
+  * Placing a building block (which may create a new coorporation, expand an existing coorporation, merge a corporation, or be seperate)
+  * (optional) Dealing with a merger (trading or selling shares)
+  * Buyig stock in a coorporation that has available shares
+
+## Game play
 
 ![start screen](https://github.com/speedyjeff/acquire/blob/master/media/start.png)
 
