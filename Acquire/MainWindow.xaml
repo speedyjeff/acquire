@@ -5,477 +5,543 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Acquire"
         mc:Ignorable="d"
-        Title="Acquire" Height="550" Width="700">
+        Title="Acquire" Height="546.633" Width="994.081">
 
-    <Grid x:Name="LayoutRoot" Background="White" Height="495" Width="700">
-        <Rectangle Height="252" HorizontalAlignment="Left" Margin="26,47,0,0" Name="rectangle145" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="252" RadiusY="15" RadiusX="15">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
-                    <GradientStop Color="#FF958FF2" Offset="0" />
-                    <GradientStop Color="#64FFFFFF" Offset="1" />
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,56,0,0" Name="rectangle1" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave" />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,56,0,0" Name="rectangle2" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave" />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,56,0,0" Name="rectangle3" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,56,0,0" Name="rectangle4" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,56,0,0" Name="rectangle5" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,56,0,0" Name="rectangle6" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,56,0,0" Name="rectangle7" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,56,0,0" Name="rectangle8" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,56,0,0" Name="rectangle9" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,56,0,0" Name="rectangle10" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,56,0,0" Name="rectangle11" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,56,0,0" Name="rectangle12" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,76,0,0" Name="rectangle13" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,76,0,0" Name="rectangle14" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,76,0,0" Name="rectangle15" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,76,0,0" Name="rectangle16" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,76,0,0" Name="rectangle17" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,76,0,0" Name="rectangle18" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,76,0,0" Name="rectangle19" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,76,0,0" Name="rectangle20" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,76,0,0" Name="rectangle21" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,76,0,0" Name="rectangle22" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,76,0,0" Name="rectangle23" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,76,0,0" Name="rectangle24" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,96,0,0" Name="rectangle25" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,96,0,0" Name="rectangle26" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,96,0,0" Name="rectangle27" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,96,0,0" Name="rectangle28" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,96,0,0" Name="rectangle29" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,96,0,0" Name="rectangle30" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,96,0,0" Name="rectangle31" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,96,0,0" Name="rectangle32" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,96,0,0" Name="rectangle33" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,96,0,0" Name="rectangle34" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,96,0,0" Name="rectangle35" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,96,0,0" Name="rectangle36" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,116,0,0" Name="rectangle37" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,116,0,0" Name="rectangle38" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,116,0,0" Name="rectangle39" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,116,0,0" Name="rectangle40" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,116,0,0" Name="rectangle41" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,116,0,0" Name="rectangle42" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,116,0,0" Name="rectangle43" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,116,0,0" Name="rectangle44" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,116,0,0" Name="rectangle45" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,116,0,0" Name="rectangle46" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,116,0,0" Name="rectangle47" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,116,0,0" Name="rectangle48" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,136,0,0" Name="rectangle49" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,136,0,0" Name="rectangle50" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,136,0,0" Name="rectangle51" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,136,0,0" Name="rectangle52" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,136,0,0" Name="rectangle53" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,136,0,0" Name="rectangle54" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,136,0,0" Name="rectangle55" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,136,0,0" Name="rectangle56" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,136,0,0" Name="rectangle57" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,136,0,0" Name="rectangle58" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,136,0,0" Name="rectangle59" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,136,0,0" Name="rectangle60" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,156,0,0" Name="rectangle61" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,156,0,0" Name="rectangle62" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,156,0,0" Name="rectangle63" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,156,0,0" Name="rectangle64" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,156,0,0" Name="rectangle65" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,156,0,0" Name="rectangle66" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,156,0,0" Name="rectangle67" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,156,0,0" Name="rectangle68" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,156,0,0" Name="rectangle69" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,156,0,0" Name="rectangle70" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,156,0,0" Name="rectangle71" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,156,0,0" Name="rectangle72" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,176,0,0" Name="rectangle73" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,176,0,0" Name="rectangle74" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,176,0,0" Name="rectangle75" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,176,0,0" Name="rectangle76" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,176,0,0" Name="rectangle77" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,176,0,0" Name="rectangle78" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,176,0,0" Name="rectangle79" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,176,0,0" Name="rectangle80" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,176,0,0" Name="rectangle81" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,176,0,0" Name="rectangle82" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,176,0,0" Name="rectangle83" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,176,0,0" Name="rectangle84" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,196,0,0" Name="rectangle85" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,196,0,0" Name="rectangle86" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,196,0,0" Name="rectangle87" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,196,0,0" Name="rectangle88" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,196,0,0" Name="rectangle89" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,196,0,0" Name="rectangle90" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,196,0,0" Name="rectangle91" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,196,0,0" Name="rectangle92" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,196,0,0" Name="rectangle93" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,196,0,0" Name="rectangle94" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,196,0,0" Name="rectangle95" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,196,0,0" Name="rectangle96" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,216,0,0" Name="rectangle97" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,216,0,0" Name="rectangle98" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,216,0,0" Name="rectangle99" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,216,0,0" Name="rectangle100" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,216,0,0" Name="rectangle101" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,216,0,0" Name="rectangle102" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,216,0,0" Name="rectangle103" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,216,0,0" Name="rectangle104" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,216,0,0" Name="rectangle105" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,216,0,0" Name="rectangle106" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,216,0,0" Name="rectangle107" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,216,0,0" Name="rectangle108" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,236,0,0" Name="rectangle109" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,236,0,0" Name="rectangle110" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,236,0,0" Name="rectangle111" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,236,0,0" Name="rectangle112" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,236,0,0" Name="rectangle113" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,236,0,0" Name="rectangle114" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,236,0,0" Name="rectangle115" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,236,0,0" Name="rectangle116" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,236,0,0" Name="rectangle117" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,236,0,0" Name="rectangle118" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,236,0,0" Name="rectangle119" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,236,0,0" Name="rectangle120" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,256,0,0" Name="rectangle121" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,256,0,0" Name="rectangle122" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,256,0,0" Name="rectangle123" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,256,0,0" Name="rectangle124" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,256,0,0" Name="rectangle125" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,256,0,0" Name="rectangle126" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,256,0,0" Name="rectangle127" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,256,0,0" Name="rectangle128" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,256,0,0" Name="rectangle129" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,256,0,0" Name="rectangle130" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,256,0,0" Name="rectangle131" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,256,0,0" Name="rectangle132" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="35,276,0,0" Name="rectangle133" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="55,276,0,0" Name="rectangle134" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="75,276,0,0" Name="rectangle135" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="95,276,0,0" Name="rectangle136" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="115,276,0,0" Name="rectangle137" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="135,276,0,0" Name="rectangle138" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="155,276,0,0" Name="rectangle139" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="175,276,0,0" Name="rectangle140" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="195,276,0,0" Name="rectangle141" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="215,276,0,0" Name="rectangle142" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="235,276,0,0" Name="rectangle143" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="255,276,0,0" Name="rectangle144" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
-        <Rectangle Height="172" HorizontalAlignment="Left" Margin="295,47,0,0" Name="rectangle146" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="361" />
-        <Label HorizontalAlignment="Left" Margin="324,76,0,0" Name="Apple_Lable" VerticalAlignment="Top" Width="81" Content="Apple Corp" Background="{x:Null}" />
-        <Label HorizontalAlignment="Left" Margin="324,56,0,0" Name="label2" VerticalAlignment="Top" Width="81" Content="Name" Background="{x:Null}" />
-        <Label HorizontalAlignment="Left" Margin="411,56,0,0" Name="label3" VerticalAlignment="Top" Width="44" Content="Shares" />
-        <Label HorizontalAlignment="Left" Margin="461,56,0,0" Name="label4" VerticalAlignment="Top" Width="50" Content="Price" />
-        <Label HorizontalAlignment="Left" Margin="411,76,0,0" Name="Apple_Shares" VerticalAlignment="Top" Width="44" Content="89" HorizontalContentAlignment="Center" />
-        <Label HorizontalAlignment="Left" Margin="461,76,0,0" Name="Apple_Price" VerticalAlignment="Top" Width="50" Content="$600" />
-        <Label Content="Berry Corp" HorizontalAlignment="Left" Margin="324,96,0,0" Name="Berry_label" VerticalAlignment="Top" Width="81" Background="{x:Null}" />
-        <Label Content="89" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="411,96,0,0" Name="Berry_Shares" VerticalAlignment="Top" Width="44" />
-        <Label Content="$600" HorizontalAlignment="Left" Margin="461,96,0,0" Name="Berry_Price" VerticalAlignment="Top" Width="50" />
-        <Label Content="Canary Corp" HorizontalAlignment="Left" Margin="324,116,0,0" Name="Canary_label" VerticalAlignment="Top" Width="81" Background="{x:Null}" />
-        <Label Content="89" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="411,116,0,0" Name="Canary_Shares" VerticalAlignment="Top" Width="44" />
-        <Label Content="$600" HorizontalAlignment="Left" Margin="461,116,0,0" Name="Canary_Price" VerticalAlignment="Top" Width="50" />
-        <Label Content="Drip Corp" HorizontalAlignment="Left" Margin="324,136,0,0" Name="Drip_label" VerticalAlignment="Top" Width="81" Background="{x:Null}" />
-        <Label Content="89" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="411,136,0,0" Name="Drip_Shares" VerticalAlignment="Top" Width="44" />
-        <Label Content="$600" HorizontalAlignment="Left" Margin="461,136,0,0" Name="Drip_Price" VerticalAlignment="Top" Width="50" />
-        <Label Content="Easy Corp" HorizontalAlignment="Left" Margin="324,156,0,0" Name="Easy_label" Width="81" Background="{x:Null}" VerticalAlignment="Top" />
-        <Label Content="89" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="411,156,0,0" Name="Easy_Shares" VerticalAlignment="Top" Width="44" />
-        <Label Content="$600" HorizontalAlignment="Left" Margin="461,156,0,0" Name="Easy_Price" VerticalAlignment="Top" Width="50" />
-        <Label Content="Frozen Corp" HorizontalAlignment="Left" Margin="324,176,0,0" Name="Frozen_label" VerticalAlignment="Top" Width="81" Background="{x:Null}" />
-        <Label Content="89" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="411,176,0,0" Name="Frozen_Shares" VerticalAlignment="Top" Width="44" />
-        <Label Content="$600" HorizontalAlignment="Left" Margin="461,176,0,0" Name="Frozen_Price" VerticalAlignment="Top" Width="50" />
-        <Rectangle Fill="Red" HorizontalAlignment="Left" Margin="303,76,0,0" Name="Apple_Square" Stroke="Black" StrokeThickness="1" Width="15" Height="15" VerticalAlignment="Top" />
-        <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="303,96,0,0" Name="Berry_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="303,116,0,0" Name="Canary_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="303,136,0,0" Name="Drip_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FF3AFF00" HorizontalAlignment="Left" Margin="303,156,0,0" Name="Easy_Square" Stroke="Black" StrokeThickness="1" Width="15" Height="15" VerticalAlignment="Top" />
-        <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="303,176,0,0" Name="Frozen_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Label HorizontalAlignment="Left" Margin="517,56,0,0" Name="label1" VerticalAlignment="Top" Width="25" Content="Size" />
-        <Label HorizontalAlignment="Left" Margin="548,56,0,0" Name="label5" VerticalAlignment="Top" Width="100" Content="Merge Bonus" />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,76,0,0" Name="Apple_Size" VerticalAlignment="Top" />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,96,0,0" Name="Berry_Size" VerticalAlignment="Top" />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,116,0,0" Name="Canary_Size" VerticalAlignment="Top"  />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,136,0,0" Name="Drip_Size" VerticalAlignment="Top"  />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,156,0,0" Name="Easy_Size" VerticalAlignment="Top"  />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,176,0,0" Name="Frozen_Size" VerticalAlignment="Top" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,76,0,0" Name="Apple_Bonus" VerticalAlignment="Top" Width="100" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,96,0,0" Name="Berry_Bonus" VerticalAlignment="Top" Width="100" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,116,0,0" Name="Canary_Bonus" VerticalAlignment="Top" Width="100" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,136,0,0" Name="Drip_Bonus" VerticalAlignment="Top" Width="100" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,156,0,0" Name="Easy_Bonus" VerticalAlignment="Top" Width="100" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,176,0,0" Name="Frozen_Bonus" VerticalAlignment="Top" Width="100" />
-        <Rectangle Height="77" HorizontalAlignment="Left" Margin="295,222,0,0" Name="rectangle147" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="361" />
-        <Label HorizontalAlignment="Left" Margin="303,227,0,0" Name="label12" VerticalAlignment="Top" Content="Name:" />
-        <Label HorizontalAlignment="Left" Margin="349,227,0,0" Name="PlayerName" VerticalAlignment="Top" Width="154" Content="Jeff" />
-        <Label Content="Cash:" HorizontalAlignment="Left" Margin="509,227,0,0" Name="label13" VerticalAlignment="Top" />
-        <Label Content="$3,500" HorizontalAlignment="Left" Margin="558,227,0,0" Name="Cash" VerticalAlignment="Top" Width="92" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="324,247,0,0" Name="Apple_Count" VerticalAlignment="Top" Width="35" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="389,247,0,0" Name="Berry_Count" VerticalAlignment="Top" Width="35" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="453,247,0,0" Name="Canary_Count" VerticalAlignment="Top" Width="35" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="325,270,0,0" Name="Drip_Count" VerticalAlignment="Top" Width="35" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="389,270,0,0" Name="Easy_Count" VerticalAlignment="Top" Width="35" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="453,270,0,0" Name="Frozen_Count" VerticalAlignment="Top" Width="35" />
-        <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="303,253,0,0" Name="rectangle148" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="368,253,0,0" Name="rectangle149" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="432,253,0,0" Name="rectangle150" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="303,276,0,0" Name="rectangle151" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FF3AFF00" Height="15" Margin="368,276,0,0" Name="rectangle152" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="15" />
-        <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="432,276,0,0" Name="rectangle153" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Label Background="{x:Null}" Content="Grape Corp" HorizontalAlignment="Left" Margin="324,196,0,0" Name="Grape_Label" VerticalAlignment="Top" Width="81" />
-        <Label Content="89" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="411,196,0,0" Name="Grape_Shares" VerticalAlignment="Top" Width="44" />
-        <Label Content="$600" HorizontalAlignment="Left" Margin="461,196,0,0" Name="Grape_Price" VerticalAlignment="Top" Width="50" />
-        <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="303,196,0,0" Name="Grape_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Label Content="144" HorizontalAlignment="Left" Margin="517,196,0,0" Name="Grape_Size" VerticalAlignment="Top" />
-        <Label Content="$12,000/$6,000" HorizontalAlignment="Left" Margin="548,196,0,0" Name="Grape_Bonus" VerticalAlignment="Top" Width="100" />
-        <Label Background="{x:Null}" Content="144" HorizontalAlignment="Left" Margin="517,270,0,0" Name="Grape_Count" VerticalAlignment="Top" Width="35" />
-        <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="496,276,0,0" Name="rectangle154" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Grid Height="37" HorizontalAlignment="Left" Margin="26,367,0,0" Name="BuyGrid" VerticalAlignment="Top" Width="630" Visibility="Collapsed" Background="#918A93DC">
-            <Label HorizontalAlignment="Left" Margin="6,6,0,0" Name="label7" VerticalAlignment="Top" Width="78" Content="Buy shares:" />
-            <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,6,446,0" Name="BuyCorp1_List" VerticalAlignment="Top" Width="90" SelectionChanged="BuyCorp_List_SelectionChanged" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="191,6,0,0" Name="BuyCorp2_List" VerticalAlignment="Top" Width="90" SelectionChanged="BuyCorp_List_SelectionChanged" />
-            <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,6,252,0" Name="BuyCorp3_List" VerticalAlignment="Top" Width="90"  SelectionChanged="BuyCorp_List_SelectionChanged"/>
-            <Button Content="Buy" Height="23" HorizontalAlignment="Left" Margin="468,6,0,0" Name="BuyButton" VerticalAlignment="Top" Width="75" Click="BuyButton_Click" />
-            <Label HorizontalAlignment="Left" Margin="386,6,0,0" Name="ShareCost" VerticalAlignment="Top" Width="74" Content="$" />
-            <Button Content="Clear" Height="23" HorizontalAlignment="Right" Margin="0,6,8,0" Name="ClearButton" VerticalAlignment="Top" Width="75" Click="ClearButton_Click" />
-        </Grid>
-        <Label HorizontalAlignment="Left" Margin="26,305,0,0" Name="Status" VerticalAlignment="Top" Width="630" Content=" " />
-        <Grid Height="34" HorizontalAlignment="Left" Margin="27,350,0,0" Name="ChooseCorpGrid" VerticalAlignment="Top" Width="333" Visibility="Collapsed" Background="#918A93DC">
-            <Label HorizontalAlignment="Left" Margin="6,6,0,0" Name="label8" VerticalAlignment="Top" Width="118" Content="Choose Corporation:" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="133,6,0,0" Name="NewCorp_List" VerticalAlignment="Top" Width="111" />
-            <Button Content="Choose" Height="23" HorizontalAlignment="Left" Margin="248,5,0,0" Name="NewCorpButton" VerticalAlignment="Top" Width="75" Click="NewCorpButton_Click" />
-        </Grid>
-        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="-40,0,0,0" Name="NA_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FF94942C" Height="15" HorizontalAlignment="Left" Margin="-40,20,0,0" Name="Selected_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="Silver" Height="15" HorizontalAlignment="Left" Margin="-40,41,0,0" Name="UnClaimed_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Rectangle Fill="#FFBEBE69" Height="15" HorizontalAlignment="Left" Margin="-40,62,0,0" Name="Selection_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-        <Button Content="Shuffle Tiles" Height="23" HorizontalAlignment="Left" Margin="566,271,0,0" Name="ShuffleTilesButton" VerticalAlignment="Top" Width="75" Click="ShuffleTilesButton_Click" />
-        <Grid Height="52" HorizontalAlignment="Left" Margin="26,349,0,0" Name="TradeGrid" VerticalAlignment="Top" Width="630" Visibility="Collapsed" Background="#918A93DC">
-            <Label HorizontalAlignment="Left" Margin="49,6,0,0" Name="TradeName" VerticalAlignment="Top" Width="110" />
-            <Label HorizontalAlignment="Left" Margin="6,6,0,0" Name="label9" VerticalAlignment="Top" Content="Name:" />
-            <Label HorizontalAlignment="Left" Margin="159,6,0,0" Name="label10" VerticalAlignment="Top" Content="Corporation merged/parent:" />
-            <Label HorizontalAlignment="Right" Margin="0,6,184,0" Name="TradeCorp" VerticalAlignment="Top" Content=""/>
-            <ComboBox HorizontalAlignment="Left" Margin="452,5,0,0" Name="TradeNumber_List" VerticalAlignment="Top" Width="41" SelectionChanged="TradeNumber_List_SelectionChanged" />
-            <Label HorizontalAlignment="Left" Margin="499,5,0,0" Name="label11" VerticalAlignment="Top" Content="for" />
-            <Label HorizontalAlignment="Left" Margin="521,5,0,0" Name="TradeResult" VerticalAlignment="Top" Content="12" />
-            <Button Content="Trade" Height="23" HorizontalAlignment="Left" Margin="549,5,0,0" Name="TradeButton" VerticalAlignment="Top" Width="75" Click="TradeButton_Click" />
-            <Label HorizontalAlignment="Left" Margin="49,28,0,0" Name="TradeBonusKind" VerticalAlignment="Top" />
-            <Label HorizontalAlignment="Left" Margin="159,28,0,0" Name="TradeBonusAmount" VerticalAlignment="Top" />
-        </Grid>
-        <Grid Height="37" HorizontalAlignment="Left" Margin="26,348,0,0" Name="SellGrid" VerticalAlignment="Top" Width="630" Visibility="Collapsed" Background="#918A93DC">
-            <Label HorizontalAlignment="Left" Margin="49,6,0,0" Content="" Name="SellName" VerticalAlignment="Top" Width="110" />
-            <Label Content="Name:" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label15" VerticalAlignment="Top" />
-            <Label HorizontalAlignment="Right" Margin="0,6,446,0" Name="label16" VerticalAlignment="Top" Content="sell" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="189,6,0,0" Name="SellNumber_List" VerticalAlignment="Top" Width="41" SelectionChanged="SellNumber_List_SelectionChanged" />
-            <Label Content="shares of" HorizontalAlignment="Left" Margin="236,6,0,0" Name="label17" VerticalAlignment="Top" Width="57" />
-            <Label Content="Label" HorizontalAlignment="Left" Margin="299,6,0,0" Name="SellCorp" VerticalAlignment="Top" Width="80" />
-            <Button Content="Sell" Height="23" HorizontalAlignment="Left" Margin="547,6,0,0" Name="SellButton" VerticalAlignment="Top" Width="75" Click="SellButton_Click" />
-            <Label HorizontalAlignment="Left" Margin="385,6,0,0" Name="label19" VerticalAlignment="Top" Content="for" />
-            <Label HorizontalAlignment="Left" Margin="413,6,0,0" Name="SellPrice" VerticalAlignment="Top" Width="92" Content="$5000" />
-        </Grid>
-        <Grid Height="34" HorizontalAlignment="Left" Margin="26,349,0,0" Name="ExitGameGrid" VerticalAlignment="Top" Width="287" Visibility="Collapsed" Background="#918A93DC">
-            <Label HorizontalAlignment="Left" Margin="6,6,0,0" Name="label6" VerticalAlignment="Top" Width="136" Content="Would you like to exit?" />
-            <Button Content="Yes" Height="23" HorizontalAlignment="Left" Margin="148,6,0,0" Name="YesButton" VerticalAlignment="Top" Width="52" Click="YesButton_Click" />
-            <Button Content="No" Height="23" HorizontalAlignment="Right" Margin="0,5,31,0" Name="NoButton" VerticalAlignment="Top" Width="52" Click="NoButton_Click" />
-        </Grid>
-        <Grid Height="162" HorizontalAlignment="Left" Margin="26,328,0,0" Name="FinalDisplayGrid" VerticalAlignment="Top" Width="630" Visibility="Collapsed" Background="#918A93DC">
-            <Label Content="Jeff" HorizontalAlignment="Left" Margin="9,6,0,0" Name="Player1_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Net worth:" HorizontalAlignment="Right" Margin="0,6,439,0" Name="label20" VerticalAlignment="Top" />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="195,6,0,0" Name="Player1_NetWorth" VerticalAlignment="Top" Width="49" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="364,6,0,0" Name="Player1_Apple" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Right" Margin="0,6,209,0" Name="Player1_Berry" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="441,6,0,0" Name="Player1_Canary" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="483,6,0,0" Name="Player1_Drip" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="526,6,0,0" Name="Player1_Easy" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="567,6,0,0" Name="Player1_Frozen" VerticalAlignment="Top"/>
-            <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="343,6,0,0" Name="rectangle155" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="384,6,0,0" Name="rectangle156" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="420,6,0,0" Name="rectangle157" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="462,6,0,0" Name="rectangle158" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF3AFF00" Height="15" HorizontalAlignment="Right" Margin="0,6,112,0" Name="rectangle159" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="546,6,0,0" Name="rectangle160" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="605,6,0,0" Name="Player1_Grape" VerticalAlignment="Top"/>
-            <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="584,6,0,0" Name="rectangle161" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Content="Cash:" HorizontalAlignment="Left" Margin="248,6,0,0" Name="label29" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="287,6,0,0" Name="Player1_Cash" VerticalAlignment="Top" Width="49" />
-            <Label Content="Jeff" HorizontalAlignment="Left" Margin="9,27,0,0" Name="Player2_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Net worth:" HorizontalAlignment="Right" Margin="0,27,439,0" Name="label18" VerticalAlignment="Top" />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="195,27,0,0" Name="Player2_NetWorth" VerticalAlignment="Top" Width="49" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="364,27,0,0" Name="Player2_Apple" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Right" Margin="0,27,209,0" Name="Player2_Berry" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="441,27,0,0" Name="Player2_Canary" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="483,27,0,0" Name="Player2_Drip" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="526,27,0,0" Name="Player2_Easy" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="567,27,0,0" Name="Player2_Frozen" VerticalAlignment="Top"/>
-            <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="343,27,0,0" Name="rectangle162" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="384,27,0,0" Name="rectangle163" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="420,27,0,0" Name="rectangle164" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="462,27,0,0" Name="rectangle165" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF3AFF00" Height="15" HorizontalAlignment="Right" Margin="0,27,112,0" Name="rectangle166" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="546,27,0,0" Name="rectangle167" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="605,27,0,0" Name="Player2_Grape" VerticalAlignment="Top"/>
-            <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="584,27,0,0" Name="rectangle168" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Content="Cash:" HorizontalAlignment="Left" Margin="248,27,0,0" Name="label30" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="287,27,0,0" Name="Player2_Cash" VerticalAlignment="Top" Width="49" />
-            <Label Content="Jeff" HorizontalAlignment="Left" Margin="9,48,0,0" Name="Player3_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Net worth:" HorizontalAlignment="Right" Margin="0,48,439,0" Name="label21" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="195,48,0,0" Name="Player3_NetWorth" VerticalAlignment="Top" Width="49" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="364,48,0,90" Name="Player3_Apple"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Right" Margin="0,48,209,0" Name="Player3_Berry" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="441,48,0,0" Name="Player3_Canary" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="483,48,0,0" Name="Player3_Drip" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="526,48,0,0" Name="Player3_Easy" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="567,48,0,90" Name="Player3_Frozen"/>
-            <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="343,48,0,0" Name="rectangle169" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="384,48,0,0" Name="rectangle170" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="420,48,0,0" Name="rectangle171" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="462,48,0,0" Name="rectangle172" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF3AFF00" Height="15" HorizontalAlignment="Right" Margin="0,48,112,0" Name="rectangle173" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="546,48,0,0" Name="rectangle174" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="605,48,0,0" Name="Player3_Grape" VerticalAlignment="Top"/>
-            <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="584,48,0,0" Name="rectangle175" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Content="Cash:" HorizontalAlignment="Left" Margin="248,48,0,0" Name="label32" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="287,48,0,0" Name="Player3_Cash" VerticalAlignment="Top" Width="49" />
-            <Label Content="Jeff" HorizontalAlignment="Left" Margin="9,69,0,0" Name="Player4_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Net worth:" HorizontalAlignment="Right" Margin="0,69,439,0" Name="label35" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="195,69,0,0" Name="Player4_NetWorth" VerticalAlignment="Top" Width="49" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="364,69,0,0" Name="Player4_Apple" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Right" Margin="0,69,209,0" Name="Player4_Berry" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="441,69,0,0" Name="Player4_Canary" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="483,69,0,0" Name="Player4_Drip" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="526,69,0,0" Name="Player4_Easy" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="567,69,0,0" Name="Player4_Frozen" VerticalAlignment="Top"/>
-            <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="343,69,0,0" Name="rectangle176" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="384,69,0,0" Name="rectangle177" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="420,69,0,0" Name="rectangle178" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="462,69,0,0" Name="rectangle179" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF3AFF00" Height="15" HorizontalAlignment="Right" Margin="0,69,112,0" Name="rectangle180" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="546,69,0,0" Name="rectangle181" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="605,69,0,0" Name="Player4_Grape" VerticalAlignment="Top"/>
-            <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="584,69,0,0" Name="rectangle182" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Content="Cash:" HorizontalAlignment="Left" Margin="248,69,0,0" Name="label44" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="287,69,0,0" Name="Player4_Cash" VerticalAlignment="Top" Width="49" />
-            <Label Content="Jeff" HorizontalAlignment="Left" Margin="9,90,0,0" Name="Player5_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Net worth:" HorizontalAlignment="Right" Margin="0,90,439,0" Name="label47" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="195,90,0,0" Name="Player5_NetWorth" VerticalAlignment="Top" Width="49" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="364,90,0,0" Name="Player5_Apple" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Right" Margin="0,90,209,0" Name="Player5_Berry" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="441,90,0,0" Name="Player5_Canary" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="483,90,0,0" Name="Player5_Drip" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="526,90,0,48" Name="Player5_Easy"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="567,90,0,0" Name="Player5_Frozen" VerticalAlignment="Top"/>
-            <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="343,90,0,0" Name="rectangle183" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="384,90,0,0" Name="rectangle184" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="420,90,0,0" Name="rectangle185" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="462,90,0,0" Name="rectangle186" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF3AFF00" Height="15" HorizontalAlignment="Right" Margin="0,90,112,0" Name="rectangle187" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="546,90,0,0" Name="rectangle188" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="605,90,0,48" Name="Player5_Grape"/>
-            <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="584,90,0,0" Name="rectangle189" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Content="Cash:" HorizontalAlignment="Left" Margin="248,90,0,0" Name="label56" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="287,90,0,0" Name="Player5_Cash" VerticalAlignment="Top" Width="49" />
-            <Label Content="Jeff" HorizontalAlignment="Left" Margin="9,111,0,0" Name="Player6_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Net worth:" HorizontalAlignment="Right" Margin="0,111,439,0" Name="label59" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="195,111,0,0" Name="Player6_NetWorth" VerticalAlignment="Top" Width="49" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="364,111,0,0" Name="Player6_Apple" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Right" Margin="0,111,209,0" Name="Player6_Berry" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="441,111,0,0" Name="Player6_Canary" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="483,111,0,0" Name="Player6_Drip" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="526,111,0,0" Name="Player6_Easy" VerticalAlignment="Top"/>
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="567,111,0,0" Name="Player6_Frozen" VerticalAlignment="Top"/>
-            <Rectangle Fill="Red" Height="15" HorizontalAlignment="Left" Margin="343,111,0,0" Name="rectangle190" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Margin="384,111,0,0" Name="rectangle191" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Margin="420,111,0,0" Name="rectangle192" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Margin="462,111,0,0" Name="rectangle193" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="#FF3AFF00" Height="15" HorizontalAlignment="Right" Margin="0,111,112,0" Name="rectangle194" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Margin="546,111,0,0" Name="rectangle195" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Background="{x:Null}" Content="24" HorizontalAlignment="Left" Margin="605,111,0,0" Name="Player6_Grape" VerticalAlignment="Top"/>
-            <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Margin="584,111,0,0" Name="rectangle196" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
-            <Label Content="Cash:" HorizontalAlignment="Left" Margin="248,111,0,0" Name="label68" VerticalAlignment="Top"  />
-            <Label Content="$3,500" HorizontalAlignment="Left" Margin="287,111,0,0" Name="Player6_Cash" VerticalAlignment="Top" Width="49" />
-            <Label HorizontalAlignment="Left" Margin="6,132,0,0" Name="label70" VerticalAlignment="Top" Content="The Winner is " />
-            <Label HorizontalAlignment="Left" Height="25" Margin="89,132,0,0" Name="WinnerName" VerticalAlignment="Top" Width="111" Background="Yellow" />
-            <Button Content="Play again?" Height="23" HorizontalAlignment="Left" Margin="236,132,0,0" Name="PlayAgainButton" VerticalAlignment="Top" Width="75" Click="StartButton_Click" />
-            <Button Content="Start Over?" Height="23" HorizontalAlignment="Left" Margin="323,132,0,0" Name="StartOverButton" VerticalAlignment="Top" Width="75" Click="StartOverButton_Click" />
-        </Grid>
-        <Label Content="NetWorth:" HorizontalAlignment="Left" Margin="496,247,0,0" Name="label14" VerticalAlignment="Top" Width="64" />
-        <Label Content="$3,500" HorizontalAlignment="Left" Margin="558,247,0,0" Name="NetWorth" VerticalAlignment="Top" Width="92" />
-        <Label HorizontalAlignment="Left" Margin="26,335,0,0" Name="AdditionalMessage" VerticalAlignment="Top" Width="630" Content=" " Background="#9CFF0A0A" Visibility="Collapsed"/>
-        <Label HorizontalAlignment="Left" Margin="714,0,0,0" Name="GameSetup_Message" VerticalAlignment="Top" Width="629" Content="Select 2 to 6 players to compete head to head to acquire the most wealth" />
-        <Label Content="Select from one of your highlighted tiles to build large corporations.  Use Shuffle to grab different tiles." Height="20" HorizontalAlignment="Left" Margin="714,26,0,0" Name="PlaceTile_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="After a successful merger you have the option to sell shares of the old corporation before they are worthless." Height="20" HorizontalAlignment="Left" Margin="713,52,0,0" Name="SellShares_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="Choose a name and share price structure for this new corporation." Height="20" HorizontalAlignment="Left" Margin="713,78,0,0" Name="ChooseCorp_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="Buy shares in one of the active corporations.  If no shares are avaliable or you have insuficient funds buy 0." Height="20" HorizontalAlignment="Left" Margin="713,104,0,0" Name="BuyShares_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="Choose the parent corporation for the newly merged corporation." Height="20" HorizontalAlignment="Left" Margin="713,130,0,0" Name="ChooseParentCorp_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="Trade shares 2:1 from the merged corporation into the newly created corporation." Height="20" HorizontalAlignment="Left" Margin="714,156,0,0" Name="TradeShares_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content=" " Height="20" HorizontalAlignment="Left" Margin="713,191,0,0" Name="NextTurn_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="The game has reached the point where a winner can be choosen, do you wish to continue playing?" Height="20" HorizontalAlignment="Left" Margin="713,217,0,0" Name="ExitGame_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content="Congradulations, this round has come to a successful conclusion." Height="20" HorizontalAlignment="Left" Margin="713,243,0,0" Name="Done_Message" VerticalAlignment="Top" Width="629" />
-        <Label Content=" " HorizontalAlignment="Left" Margin="714,271,0,0" Name="Blank_Message" VerticalAlignment="Top" Width="630" />
-        <Label Content="An avaliable corporation is required to complete this placement, there are none avaliable, please select again." HorizontalAlignment="Left" Margin="714,293,0,0" Name="NoAvaliableCorps_Message" VerticalAlignment="Top" Width="630" />
-        <Label Content="Corporations larger than 11 cannot be merged into another corporation, choose another tile." HorizontalAlignment="Left" Margin="714,315,0,0" Name="InvalidMerger_Message" VerticalAlignment="Top" Width="630" />
-        <Label Content="Insufficient cash to complete this purchase, please make another selection." HorizontalAlignment="Left" Margin="714,337,0,0" Name="InsufficientFunds_Message" VerticalAlignment="Top" Width="630" />
-        <Grid Height="359" HorizontalAlignment="Left" Margin="32,51,0,0" Name="StartGrid" VerticalAlignment="Top" Width="606" Background="#E1293BBC" Visibility="Visible">
-            <ComboBox Height="25" HorizontalAlignment="Left" Margin="123,26,0,0" Name="Player1_List" VerticalAlignment="Top" Width="120" />
-            <ComboBox Height="25" HorizontalAlignment="Left" Margin="123,56,0,0" Name="Player2_List" VerticalAlignment="Top" Width="120" />
-            <ComboBox Height="25" HorizontalAlignment="Left" Margin="123,85,0,0" Name="Player3_List" VerticalAlignment="Top" Width="120" />
-            <ComboBox Height="25" HorizontalAlignment="Left" Margin="123,114,0,0" Name="Player4_List" VerticalAlignment="Top" Width="120" />
-            <ComboBox Height="25" HorizontalAlignment="Left" Margin="123,144,0,0" Name="Player5_List" VerticalAlignment="Top" Width="120" />
-            <ComboBox Height="25" HorizontalAlignment="Left" Margin="123,174,0,0" Name="Player6_List" VerticalAlignment="Top" Width="120" />
-            <TextBlock Height="100" HorizontalAlignment="Left" Margin="251,23,0,0" Name="textBlock1" Text="Acquire consists of building and merging corporations.  The object of the game is to acquire the largest net worth.  There are a few simple rules which govern the game:" VerticalAlignment="Top" Width="349" OpacityMask="{x:Null}" Foreground="White" FontFamily="Arial Black" FontSize="14" TextWrapping="Wrap" />
-            <TextBlock FontFamily="Arial Black" FontSize="14" Foreground="White" Height="86" HorizontalAlignment="Left" Margin="283,124,0,0" Name="textBlock2" OpacityMask="{x:Null}" Text="1. Each player has the opportunity to place 1 tile per turn.  Every consecutive tile placement constitutes a new corporation." TextWrapping="Wrap" VerticalAlignment="Top" Width="317" />
-            <TextBlock FontFamily="Arial Black" FontSize="14" Foreground="White" Height="65" HorizontalAlignment="Left" Margin="283,203,0,0" Name="textBlock3" OpacityMask="{x:Null}" Text="2. After placing a tile you can buy 3 shares of stock in any active corporation." TextWrapping="Wrap" VerticalAlignment="Top" Width="317" />
-            <TextBlock FontFamily="Arial Black" FontSize="14" Foreground="White" Height="90" HorizontalAlignment="Left" Margin="283,262,0,0" Name="textBlock4" OpacityMask="{x:Null}" Text="3. There are a few rules for merging corporations.  The larger corporation becomes the parent, and no corporation larger than 11 can be merged." TextWrapping="Wrap" VerticalAlignment="Top" Width="317" />
-            <Button Content="Play" Height="23" HorizontalAlignment="Left" Margin="16,212,0,0" Name="StartButton" VerticalAlignment="Top" Width="75" Click="StartButton_Click" />
-            <Button Content="Repeat Play" Height="23" HorizontalAlignment="Left" Margin="96,212,0,0" Name="RepeatButton" VerticalAlignment="Top" Width="75" Click="RepeatButton_Click" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,26,0,0" Name="Player1_Text" VerticalAlignment="Top" Width="104" Text="Player 1" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,56,0,0" Name="Player2_Text" VerticalAlignment="Top" Width="104" Text="Player 2" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,85,0,0" Name="Player3_Text" VerticalAlignment="Top" Width="104" Text="Player 3" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,114,0,0" Name="Player4_Text" Text="Player 4" VerticalAlignment="Top" Width="104" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,144,0,0" Name="Player5_Text" Text="Player 5" VerticalAlignment="Top" Width="104" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,174,0,0" Name="Player6_Text" Text="Player 6" VerticalAlignment="Top" Width="104" />
-            <TextBlock Height="83" HorizontalAlignment="Left" Margin="20,251,0,0" Name="StartStatus" Text="" VerticalAlignment="Top" Width="223" Foreground="Red" FontSize="18" FontWeight="Bold" TextWrapping="Wrap" />
-        </Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="30,6,0,0" Name="textBlock5" Text="A C Q U I R E" VerticalAlignment="Top" FontFamily="Lucida Sans Unicode" FontSize="28" TextAlignment="Left" />
-        <Label Height="23" HorizontalAlignment="Left" Margin="713,360,0,0" Name="StartErr_Message" VerticalAlignment="Top" Width="182" Content="Please select at least 2 players" />
-        <Grid Height="127" HorizontalAlignment="Left" Margin="26,360,0,0" Name="WinGrid" VerticalAlignment="Top" Width="630" Background="#918A93DC" Visibility="Collapsed">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="488*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="59" />
-                <RowDefinition Height="58*" />
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40" />
+                <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label Height="17" HorizontalAlignment="Left" Margin="6,7,0,0" Name="label22" VerticalAlignment="Top" Width="38" Content="Name:" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="53,7,0,0" Name="WinPlayer1_Name" VerticalAlignment="Top" Width="106" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="169,7,0,0" Name="label26" VerticalAlignment="Top" Width="35" Content="Wins:" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="205,7,0,0" Name="WinPlayer1_Wins" VerticalAlignment="Top" Width="106" />
-            <Label Content="NetWorth:" Height="17" HorizontalAlignment="Left" Margin="317,7,0,0" Name="label23" VerticalAlignment="Top" Width="62" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="384,7,0,0" Name="WinPlayer1_NetWorth" VerticalAlignment="Top" Width="238" />
-            <Label Content="Name:" Height="17" HorizontalAlignment="Left" Margin="6,26,0,0" Name="label24" VerticalAlignment="Top" Width="38" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="53,26,0,0" Name="WinPlayer2_Name" VerticalAlignment="Top" Width="106" />
-            <Label Content="Wins:" Height="17" HorizontalAlignment="Left" Margin="169,26,0,0" Name="label27" VerticalAlignment="Top" Width="35" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="205,26,0,0" Name="WinPlayer2_Wins" VerticalAlignment="Top" Width="106" />
-            <Label Content="NetWorth:" Height="17" HorizontalAlignment="Left" Margin="317,26,0,0" Name="label31" VerticalAlignment="Top" Width="62" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="384,26,0,0" Name="WinPlayer2_NetWorth" VerticalAlignment="Top" Width="238" />
-            <Label Content="Name:" Height="17" HorizontalAlignment="Left" Margin="6,45,0,0" Name="label34" VerticalAlignment="Top" Width="38" Grid.RowSpan="2" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="53,45,0,0" Name="WinPlayer3_Name" VerticalAlignment="Top" Width="106" Grid.RowSpan="2" />
-            <Label Content="Wins:" Height="17" HorizontalAlignment="Left" Margin="169,45,0,0" Name="label37" VerticalAlignment="Top" Width="35" Grid.RowSpan="2" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="205,45,0,0" Name="WinPlayer3_Wins" VerticalAlignment="Top" Width="106" Grid.RowSpan="2" />
-            <Label Content="NetWorth:" Height="17" HorizontalAlignment="Left" Margin="317,45,0,0" Name="label39" VerticalAlignment="Top" Width="62" Grid.RowSpan="2" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="384,45,0,0" Name="WinPlayer3_NetWorth" VerticalAlignment="Top" Width="238" Grid.RowSpan="2" />
-            <Label Content="Name:" Height="17" HorizontalAlignment="Left" Margin="6,3,0,0" Name="label41" VerticalAlignment="Top" Width="38" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="53,3,0,0" Name="WinPlayer4_Name" VerticalAlignment="Top" Width="106" Grid.Row="1" />
-            <Label Content="Wins:" Height="17" HorizontalAlignment="Left" Margin="169,3,0,0" Name="label43" VerticalAlignment="Top" Width="35" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="205,3,0,0" Name="WinPlayer4_Wins" VerticalAlignment="Top" Width="106" Grid.Row="1" />
-            <Label Content="NetWorth:" Height="17" HorizontalAlignment="Left" Margin="317,3,0,0" Name="label46" VerticalAlignment="Top" Width="62" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="384,3,0,0" Name="WinPlayer4_NetWorth" VerticalAlignment="Top" Width="238" Grid.Row="1" />
-            <Label Content="Name:" Height="17" HorizontalAlignment="Left" Margin="6,23,0,0" Name="label49" VerticalAlignment="Top" Width="38" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="53,23,0,0" Name="WinPlayer5_Name" VerticalAlignment="Top" Width="106" Grid.Row="1" />
-            <Label Content="Wins:" Height="17" HorizontalAlignment="Left" Margin="169,23,0,0" Name="label51" VerticalAlignment="Top" Width="35" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="205,23,0,0" Name="WinPlayer5_Wins" VerticalAlignment="Top" Width="106" Grid.Row="1" />
-            <Label Content="NetWorth:" Height="17" HorizontalAlignment="Left" Margin="317,23,0,0" Name="label53" VerticalAlignment="Top" Width="62" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="384,23,0,0" Name="WinPlayer5_NetWorth" VerticalAlignment="Top" Width="238" Grid.Row="1" />
-            <Label Content="Name:" Height="17" HorizontalAlignment="Left" Margin="6,40,0,0" Name="label55" VerticalAlignment="Top" Width="38" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="53,40,0,0" Name="WinPlayer6_Name" VerticalAlignment="Top" Width="106" Grid.Row="1" />
-            <Label Content="Wins:" Height="17" HorizontalAlignment="Left" Margin="169,40,0,0" Name="label58" VerticalAlignment="Top" Width="35" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="205,40,0,0" Name="WinPlayer6_Wins" VerticalAlignment="Top" Width="106" Grid.Row="1" />
-            <Label Content="NetWorth:" Height="17" HorizontalAlignment="Left" Margin="317,40,0,0" Name="label61" VerticalAlignment="Top" Width="62" Grid.Row="1" />
-            <Label Height="17" HorizontalAlignment="Left" Margin="384,40,0,0" Name="WinPlayer6_NetWorth" VerticalAlignment="Top" Width="238" Grid.Row="1" />
+            <!-- title -->
+            <TextBlock Grid.Row="0" HorizontalAlignment="Left" Name="textBlock5" Text="A C Q U I R E" VerticalAlignment="Top" FontFamily="Lucida Sans Unicode" FontSize="28" TextAlignment="Left" />
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <!-- game board -->
+                <Border BorderBrush="Black" BorderThickness="2" CornerRadius="15" Padding="5" Grid.Column="0">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="#FF958FF2" Offset="0" />
+                            <GradientStop Color="#64FFFFFF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <UniformGrid Rows="12" Columns="12">
+                        <Rectangle Fill="White" Height="15" Name="rectangle1" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave" />
+                        <Rectangle Fill="White" Height="15" Name="rectangle2" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave" />
+                        <Rectangle Fill="White" Height="15" Name="rectangle3" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle4" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle5" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle6" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle7" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle8" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle9" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle10" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle11" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle12" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"  />
+                        <Rectangle Fill="White" Height="15" Name="rectangle13" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle14" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle15" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle16" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle17" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle18" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle19" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle20" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle21" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle22" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle23" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle24" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle25" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle26" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle27" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle28" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle29" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle30" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle31" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle32" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle33" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle34" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle35" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle36" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle37" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle38" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle39" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle40" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle41" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle42" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle43" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle44" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle45" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle46" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle47" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle48" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle49" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle50" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle51" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle52" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle53" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle54" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle55" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle56" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle57" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle58" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle59" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle60" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle61" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle62" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle63" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle64" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle65" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle66" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle67" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle68" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle69" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle70" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle71" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle72" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle73" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle74" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle75" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle76" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle77" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle78" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle79" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle80" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle81" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle82" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle83" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle84" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle85" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle86" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle87" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle88" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle89" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle90" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle91" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle92" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle93" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle94" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle95" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle96" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle97" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle98" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle99" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle100" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle101" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle102" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle103" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle104" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle105" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle106" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle107" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle108" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle109" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle110" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle111" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle112" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle113" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle114" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle115" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle116" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle117" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle118" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle119" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle120" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle121" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle122" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle123" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle124" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle125" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle126" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle127" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle128" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle129" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle130" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle131" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle132" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle133" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle134" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle135" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle136" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle137" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle138" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle139" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle140" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle141" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle142" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle143" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+                        <Rectangle Fill="White" Height="15" Name="rectangle144" Stroke="Black" StrokeThickness="1" Width="15" MouseLeftButtonDown="Square_MouseLeftButtonDown" MouseEnter="Square_MouseEnter" MouseLeave="Square_MouseLeave"/>
+
+                    </UniformGrid>
+                </Border>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="230"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!-- Tracking grid -->
+                    <Border BorderBrush="Black" BorderThickness="2" Padding="5" Grid.Row="0">
+                        <UniformGrid Rows="8" Columns="6">
+                            <Rectangle Grid.Row="0" Grid.Column="0" Fill="White" HorizontalAlignment="Left" Name="Square" Stroke="White" StrokeThickness="1" Width="15" Height="15" VerticalAlignment="Top" />
+                            <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Name="label2" VerticalAlignment="Top" Content="Name"  />
+                            <Label Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Name="label3" VerticalAlignment="Top" Content="Shares" />
+                            <Label Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" Name="label4" VerticalAlignment="Top" Content="Price" />
+                            <Label Grid.Row="0" Grid.Column="4" HorizontalAlignment="Left" Name="label1" VerticalAlignment="Top" Content="Size" />
+                            <Label Grid.Row="0" Grid.Column="5" HorizontalAlignment="Left" Name="label5" VerticalAlignment="Top" Content="Merge Bonus" />
+
+                            <Rectangle Grid.Row="1" Grid.Column="0" Fill="Red" HorizontalAlignment="Left" Name="Apple_Square" Stroke="Black" StrokeThickness="1" Width="15" Height="15" VerticalAlignment="Top" />
+                            <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Name="Apple_Lable" VerticalAlignment="Top" Content="Apple Corp"  />
+                            <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Name="Apple_Shares" VerticalAlignment="Top" Content="89" />
+                            <Label Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" Name="Apple_Price" VerticalAlignment="Top" Content="$600" />
+                            <Label Grid.Row="1" Grid.Column="4" Content="144" HorizontalAlignment="Left" Name="Apple_Size" VerticalAlignment="Top" />
+                            <Label Grid.Row="1" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left" Name="Apple_Bonus" VerticalAlignment="Top" />
+
+                            <Rectangle Grid.Row="2" Grid.Column="0" Fill="#FF0028FF" Height="15" HorizontalAlignment="Left" Name="Berry_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
+                            <Label Grid.Row="2" Grid.Column="1" Content="Berry Corp" HorizontalAlignment="Left" Name="Berry_label" VerticalAlignment="Top"  />
+                            <Label Grid.Row="2" Grid.Column="2" Content="89" HorizontalAlignment="Left" Name="Berry_Shares" VerticalAlignment="Top" />
+                            <Label Grid.Row="2" Grid.Column="3" Content="$600" HorizontalAlignment="Left" Name="Berry_Price" VerticalAlignment="Top"  />
+                            <Label Grid.Row="2" Grid.Column="4" Content="144" HorizontalAlignment="Left" Name="Berry_Size" VerticalAlignment="Top" />
+                            <Label Grid.Row="2" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left" Name="Berry_Bonus" VerticalAlignment="Top"/>
+
+                            <Rectangle Grid.Row="3" Grid.Column="0" Fill="#FFFFEC00" Height="15" HorizontalAlignment="Left" Name="Canary_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
+                            <Label Grid.Row="3" Grid.Column="1" Content="Canary Corp" HorizontalAlignment="Left" Name="Canary_label" VerticalAlignment="Top" />
+                            <Label Grid.Row="3" Grid.Column="2" Content="89" HorizontalAlignment="Left" Name="Canary_Shares" VerticalAlignment="Top"  />
+                            <Label Grid.Row="3" Grid.Column="3" Content="$600" HorizontalAlignment="Left" Name="Canary_Price" VerticalAlignment="Top"  />
+                            <Label Grid.Row="3" Grid.Column="4" Content="144" HorizontalAlignment="Left" Name="Canary_Size" VerticalAlignment="Top"  />
+                            <Label Grid.Row="3" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left" Name="Canary_Bonus" VerticalAlignment="Top" />
+
+                            <Rectangle Grid.Row="4" Grid.Column="0" Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Name="Drip_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
+                            <Label Grid.Row="4" Grid.Column="1" Content="Drip Corp" HorizontalAlignment="Left" Name="Drip_label" VerticalAlignment="Top"  />
+                            <Label Grid.Row="4" Grid.Column="2" Content="89" HorizontalAlignment="Left" Name="Drip_Shares" VerticalAlignment="Top"  />
+                            <Label Grid.Row="4" Grid.Column="3" Content="$600" HorizontalAlignment="Left" Name="Drip_Price" VerticalAlignment="Top"  />
+                            <Label Grid.Row="4" Grid.Column="4" Content="144" HorizontalAlignment="Left" Name="Drip_Size" VerticalAlignment="Top"  />
+                            <Label Grid.Row="4" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left" Name="Drip_Bonus" VerticalAlignment="Top"  />
+
+                            <Rectangle Grid.Row="5" Grid.Column="0" Fill="#FF3AFF00" HorizontalAlignment="Left" Name="Easy_Square" Stroke="Black" StrokeThickness="1" Width="15" Height="15" VerticalAlignment="Top" />
+                            <Label Grid.Row="5" Grid.Column="1" Content="Easy Corp" HorizontalAlignment="Left" Name="Easy_label" VerticalAlignment="Top" />
+                            <Label Grid.Row="5" Grid.Column="2" Content="89" HorizontalAlignment="Left" Name="Easy_Shares" VerticalAlignment="Top" />
+                            <Label Grid.Row="5" Grid.Column="3" Content="$600" HorizontalAlignment="Left" Name="Easy_Price" VerticalAlignment="Top" />
+                            <Label Grid.Row="5" Grid.Column="4" Content="144" HorizontalAlignment="Left"  Name="Easy_Size" VerticalAlignment="Top"  />
+                            <Label Grid.Row="5" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left"  Name="Easy_Bonus" VerticalAlignment="Top"  />
+
+                            <Rectangle Grid.Row="6" Grid.Column="0" Fill="#FF8900FF" Height="15" HorizontalAlignment="Left"  Name="Grape_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
+                            <Label Grid.Row="6" Grid.Column="1" Content="Grape Corp" HorizontalAlignment="Left" Name="Grape_Label" VerticalAlignment="Top" />
+                            <Label Grid.Row="6" Grid.Column="2" Content="89" HorizontalAlignment="Left" Name="Grape_Shares" VerticalAlignment="Top" />
+                            <Label Grid.Row="6" Grid.Column="3" Content="$600" HorizontalAlignment="Left" Name="Grape_Price" VerticalAlignment="Top"  />
+                            <Label Grid.Row="6" Grid.Column="4" Content="144" HorizontalAlignment="Left" Name="Grape_Size" VerticalAlignment="Top" />
+                            <Label Grid.Row="6" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left" Name="Grape_Bonus" VerticalAlignment="Top" />
+
+                            <Rectangle Grid.Row="7" Grid.Column="0" Fill="Black" Height="15" HorizontalAlignment="Left" Name="Frozen_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
+                            <Label Grid.Row="7" Grid.Column="1" Content="Frozen Corp" HorizontalAlignment="Left" Name="Frozen_label" VerticalAlignment="Top" />
+                            <Label Grid.Row="7" Grid.Column="2" Content="89" HorizontalAlignment="Left" Name="Frozen_Shares" VerticalAlignment="Top" />
+                            <Label Grid.Row="7" Grid.Column="3" Content="$600" HorizontalAlignment="Left" Name="Frozen_Price" VerticalAlignment="Top" />
+                            <Label Grid.Row="7" Grid.Column="4" Content="144" HorizontalAlignment="Left" Name="Frozen_Size" VerticalAlignment="Top" />
+                            <Label Grid.Row="7" Grid.Column="5" Content="$12,000/$6,000" HorizontalAlignment="Left"  Name="Frozen_Bonus" VerticalAlignment="Top"  />
+
+                        </UniformGrid>
+                    </Border>
+
+                    <!-- plyer stats -->
+                    <Border BorderBrush="Black" BorderThickness="2" Padding="5" Grid.Row="1">
+                        <UniformGrid Rows="2" Columns="1" VerticalAlignment="Top">
+                            <UniformGrid Rows="1" Columns="7" VerticalAlignment="Top">
+                                <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Name="label12" Content="Name:" VerticalAlignment="Center"/>
+                                <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Name="PlayerName" Content="Jeff" VerticalAlignment="Center"/>
+                                <Label Grid.Row="0" Grid.Column="2" Content="Cash:" HorizontalAlignment="Left" Name="label13" VerticalAlignment="Center"/>
+                                <Label Grid.Row="0" Grid.Column="3" Content="$3,500" HorizontalAlignment="Left" Name="Cash" VerticalAlignment="Center"/>
+                                <Label Grid.Row="0" Grid.Column="4" Content="NetWorth:" Name="label14" VerticalAlignment="Center" />
+                                <Label Grid.Row="0" Grid.Column="5" Content="$3,500" Name="NetWorth" VerticalAlignment="Center" />
+                                <Button Content="Shuffle Tiles" Height="25" HorizontalAlignment="Left" Name="ShuffleTilesButton" Width="75" Click="ShuffleTilesButton_Click" />
+                            </UniformGrid>
+                            <UniformGrid Rows="1" Columns="14" VerticalAlignment="Top">
+                                <Rectangle Fill="Red" HorizontalAlignment="Left"  Height="15" Name="rectangle148" Stroke="Black" StrokeThickness="1" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Apple_Count" VerticalAlignment="Top"  />
+                                <Rectangle Fill="#FF0028FF" HorizontalAlignment="Left"  Height="15" Name="rectangle149" Stroke="Black" StrokeThickness="1" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Berry_Count" VerticalAlignment="Top" />
+                                <Rectangle Fill="#FFFFEC00" HorizontalAlignment="Left"  Height="15" Name="rectangle150" Stroke="Black" StrokeThickness="1" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Canary_Count" VerticalAlignment="Top"  />
+                                <Rectangle Fill="#FFF000FF" Height="15" HorizontalAlignment="Left" Name="rectangle151" Stroke="Black" StrokeThickness="1" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Drip_Count" VerticalAlignment="Top" />
+                                <Rectangle Fill="#FF3AFF00" Height="15" Name="rectangle152" Stroke="Black" StrokeThickness="1" HorizontalAlignment="Left" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Easy_Count" VerticalAlignment="Top" />
+                                <Rectangle Fill="#FF8900FF" Height="15" HorizontalAlignment="Left" Name="rectangle154" Stroke="Black" StrokeThickness="1" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Grape_Count" VerticalAlignment="Top" />
+                                <Rectangle Fill="Black" Height="15" HorizontalAlignment="Left" Name="rectangle153" Stroke="Black" StrokeThickness="1" Width="15" />
+                                <Label Content="144" HorizontalAlignment="Left" Name="Frozen_Count" VerticalAlignment="Top" />
+                            </UniformGrid>
+                        </UniformGrid>
+                    </Border>
+                </Grid>
+            </Grid>
+            <!-- status -->
+            <Label Grid.Row="2" HorizontalAlignment="Left" Name="Status" VerticalAlignment="Top" Width="939" Content=" " Height="32" />
+            <Label Grid.Row="3" HorizontalAlignment="Left" Name="AdditionalMessage" VerticalAlignment="Top" Width="939" Content=" " Background="#9CFF0A0A" Visibility="Collapsed"/>
+
+            <Grid Grid.Row="4">
+                <!-- buy panel -->
+                <Border Background="#918A93DC" Padding="5" Name="BuyGrid" Visibility="Collapsed" VerticalAlignment="Top">
+                    <UniformGrid Rows="1">
+                        <Label Name="label7" VerticalAlignment="Top" Width="78" Content="Buy shares:" />
+                        <ComboBox Height="23" Name="BuyCorp1_List" VerticalAlignment="Top" Width="90" SelectionChanged="BuyCorp_List_SelectionChanged" />
+                        <ComboBox Height="23" Name="BuyCorp2_List" VerticalAlignment="Top" Width="90" SelectionChanged="BuyCorp_List_SelectionChanged" />
+                        <ComboBox Height="23" Name="BuyCorp3_List" VerticalAlignment="Top" Width="90"  SelectionChanged="BuyCorp_List_SelectionChanged"/>
+                        <Label HorizontalAlignment="Left" Name="ShareCost" VerticalAlignment="Top" Content="$" />
+                        <Button Content="Buy" Height="23" Name="BuyButton" VerticalAlignment="Top" Width="75" Click="BuyButton_Click" />
+                        <Button Content="Clear" Height="23" Name="ClearButton" VerticalAlignment="Top" Width="75" Click="ClearButton_Click" />
+                    </UniformGrid>
+                </Border>
+
+                <!-- choose corp -->
+                <Border Background="#918A93DC" Name="ChooseCorpGrid" Visibility="Collapsed" Padding="5" VerticalAlignment="Top">
+                    <UniformGrid Rows="1">
+                        <Label  Name="label8" VerticalAlignment="Top" Width="118" Content="Choose Corporation:" />
+                        <ComboBox Height="23" Name="NewCorp_List" VerticalAlignment="Top" Width="111" />
+                        <Button Content="Choose" Height="23" Name="NewCorpButton" VerticalAlignment="Top" Width="75" Click="NewCorpButton_Click" />
+                    </UniformGrid>
+                </Border>
+
+                <!-- corp merger -->
+                <Border Background="#918A93DC" Name="TradeGrid" Visibility="Collapsed" Padding="5" VerticalAlignment="Top">
+                    <UniformGrid Rows="2" Columns="8">
+                        <Label Name="label9" VerticalAlignment="Top" Content="Name:" />
+                        <Label Name="TradeName" VerticalAlignment="Top" />
+                        <Label Name="label10" VerticalAlignment="Top" Content="Corporation merged/parent:" />
+                        <Label Name="TradeCorp" VerticalAlignment="Top" Content=""/>
+                        <ComboBox Name="TradeNumber_List" VerticalAlignment="Top" SelectionChanged="TradeNumber_List_SelectionChanged" />
+                        <Label Name="label11" VerticalAlignment="Top" Content="for" />
+                        <Label Name="TradeResult" VerticalAlignment="Top" Content="12" />
+                        <Button Content="Trade" Height="23" Name="TradeButton" VerticalAlignment="Top" Click="TradeButton_Click" />
+                        <Label Name="TradeBonusKind" VerticalAlignment="Top" />
+                        <Label Name="TradeBonusAmount" VerticalAlignment="Top" />
+                    </UniformGrid>
+                </Border>
+
+                <!-- selling -->
+                <Border Background="#918A93DC" Visibility="Collapsed" Name="SellGrid" Padding="5" VerticalAlignment="Top">
+                    <UniformGrid Rows="1">
+                        <Label Content="" Name="SellName" VerticalAlignment="Top" Width="110" />
+                        <Label Content="Name:" Name="label15" VerticalAlignment="Top" />
+                        <Label Name="label16" VerticalAlignment="Top" Content="sell" />
+                        <ComboBox Height="23" Name="SellNumber_List" VerticalAlignment="Top" Width="41" SelectionChanged="SellNumber_List_SelectionChanged" />
+                        <Label Content="shares of" Name="label17" VerticalAlignment="Top" Width="57" />
+                        <Label Content="Label" Name="SellCorp" VerticalAlignment="Top" Width="80" />
+                        <Label Name="label19" VerticalAlignment="Top" Content="for" />
+                        <Label Name="SellPrice" VerticalAlignment="Top" Width="92" Content="$5000" />
+                        <Button Content="Sell" Height="23" Name="SellButton" VerticalAlignment="Top" Width="75" Click="SellButton_Click" />
+                    </UniformGrid>
+                </Border>
+
+                <!-- exit -->
+                <Border Name="ExitGameGrid" Visibility="Collapsed" Background="#918A93DC" Padding="5" VerticalAlignment="Top">
+                    <UniformGrid Rows="1" Columns="3">
+                        <Label Name="label6" VerticalAlignment="Top" Width="136" Content="Would you like to exit?" />
+                        <Button Content="Yes" Height="23" Name="YesButton" VerticalAlignment="Top" Width="52" Click="YesButton_Click" />
+                        <Button Content="No" Height="23" Name="NoButton" VerticalAlignment="Top" Width="52" Click="NoButton_Click" />
+                    </UniformGrid>
+                </Border>
+
+            </Grid>
         </Grid>
+
+        <!-- winner -->
+        <Border Name="FinalDisplayGrid" Visibility="Collapsed" Background="#E1293BBC" Margin="0,8.878,0,0" Padding="5" Grid.Row="1">
+            <UniformGrid Columns="10">
+                <!-- header -->
+                <Label Foreground="white" FontSize="18" FontWeight="Bold"  Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Cash:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Networth:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Rectangle HorizontalAlignment="Center" Fill="Red" Height="15" Name="rectangle155" Stroke="Black" StrokeThickness="1" Width="15" />
+                <Rectangle HorizontalAlignment="Center" Fill="#FF0028FF" Height="15" Name="rectangle156" Stroke="Black" StrokeThickness="1" Width="15" />
+                <Rectangle HorizontalAlignment="Center" Fill="#FFFFEC00" Height="15" Name="rectangle157" Stroke="Black" StrokeThickness="1" Width="15" />
+                <Rectangle HorizontalAlignment="Center" Fill="#FFF000FF" Height="15" Name="rectangle158" Stroke="Black" StrokeThickness="1" Width="15" />
+                <Rectangle HorizontalAlignment="Center" Fill="#FF3AFF00" Height="15" Name="rectangle159" Stroke="Black" StrokeThickness="1" Width="15" />
+                <Rectangle HorizontalAlignment="Center" Fill="Black" Height="15" Name="rectangle160" Stroke="Black" StrokeThickness="1" Width="15" />
+                <Rectangle HorizontalAlignment="Center" Fill="#FF8900FF" Height="15" Name="rectangle161" Stroke="Black" StrokeThickness="1" Width="15" />
+
+                <!-- player1 -->
+                <Label Foreground="white" Content="Jeff" Name="Player1_Name" Width="106" />
+                <Label Foreground="white" Content="$3,500" Name="Player1_Cash" Width="49" />
+                <Label Foreground="white" Content="$3,500" Name="Player1_NetWorth" Width="49" />
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Apple" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Berry" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Canary" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Drip" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Easy" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Frozen" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player1_Grape" VerticalAlignment="Top"/>
+
+                <!-- player 2 -->
+                <Label Foreground="white" Content="Jeff" Name="Player2_Name" Width="106" />
+                <Label Foreground="white" Content="$3,500" Name="Player2_Cash" Width="49" />
+                <Label Foreground="white" Content="$3,500" Name="Player2_NetWorth" Width="49" />
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Apple" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Berry" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Canary" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Drip" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Easy" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Frozen" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player2_Grape" VerticalAlignment="Top"/>
+
+                <!-- player 3 -->
+                <Label Foreground="white" Content="Jeff" Name="Player3_Name" Width="106" />
+                <Label Foreground="white" Content="$3,500" Name="Player3_Cash" Width="49" />
+                <Label Foreground="white" Content="$3,500" Name="Player3_NetWorth" Width="49" />
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Apple"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Berry" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Canary" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Drip" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Easy" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Frozen"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player3_Grape" VerticalAlignment="Top"/>
+
+                <!-- player 4 -->
+                <Label Foreground="white" Content="Jeff" Name="Player4_Name" Width="106" />
+                <Label Foreground="white" Content="$3,500" Name="Player4_Cash" Width="49" />
+                <Label Foreground="white" Content="$3,500" Name="Player4_NetWorth" Width="49" />
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Apple" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Berry" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Canary" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Drip" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Easy" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Frozen" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player4_Grape" VerticalAlignment="Top"/>
+
+                <!-- player 5 -->
+                <Label Foreground="white" Content="Jeff" Name="Player5_Name" Width="106" />
+                <Label Foreground="white" Content="$3,500" Name="Player5_Cash" Width="49" />
+                <Label Foreground="white" Content="$3,500" Name="Player5_NetWorth" Width="49" />
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Apple" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Berry" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Canary" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Drip" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Easy"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Frozen" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player5_Grape"/>
+
+                <!-- player 6 -->
+                <Label Foreground="white" Content="Jeff" Name="Player6_Name" Width="106" />
+                <Label Foreground="white" Content="$3,500" Name="Player6_Cash" Width="49" />
+                <Label Foreground="white" Content="$3,500" Name="Player6_NetWorth" Width="49" />
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Apple" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Berry" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Canary" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Drip" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Easy" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Frozen" VerticalAlignment="Top"/>
+                <Label Foreground="white" HorizontalAlignment="Center" Content="24" Name="Player6_Grape" VerticalAlignment="Top"/>
+
+                <!-- winner -->
+                <Label Foreground="white" Name="label70" Content="The Winner is " VerticalAlignment="Center" />
+                <Label Foreground="Black" Name="WinnerName" Background="Yellow" VerticalAlignment="Center" />
+                <Button Content="Play again?" Height="23" Name="PlayAgainButton" Width="75" Click="StartButton_Click" />
+                <Button Content="Start Over?" Height="23" Name="StartOverButton" Width="75" Click="StartOverButton_Click" />
+            </UniformGrid>
+        </Border>
+
+        <!-- start -->
+        <Border Name="StartGrid" VerticalAlignment="Top" Background="#E1293BBC" Visibility="Visible" Margin="0,8.878,0,0" Padding="5" Grid.Row="1">
+            <UniformGrid Columns="2">
+                <UniformGrid Columns="1">
+                    <TextBlock Name="textBlock1" Text="Acquire consists of building and merging corporations.  The object of the game is to acquire the largest net worth.  There are a few simple rules which govern the game:" Foreground="White" FontFamily="Arial Black" FontSize="18" TextWrapping="Wrap" />
+                    <TextBlock FontFamily="Arial Black" FontSize="18" Foreground="White" Name="textBlock2" Text="1. Each player has the opportunity to place 1 tile per turn.  Every consecutive tile placement constitutes a new corporation." TextWrapping="Wrap" />
+                    <TextBlock FontFamily="Arial Black" FontSize="18" Foreground="White" Name="textBlock3" Text="2. After placing a tile you can buy 3 shares of stock in any active corporation." TextWrapping="Wrap" />
+                    <TextBlock FontFamily="Arial Black" FontSize="18" Foreground="White" Name="textBlock4" Text="3. There are a few rules for merging corporations.  The larger corporation becomes the parent, and no corporation larger than 11 can be merged." TextWrapping="Wrap"  />
+                    <TextBlock Name="StartStatus" Text="" Foreground="Red" FontSize="18" FontWeight="Bold" TextWrapping="Wrap" />
+                </UniformGrid>
+                <UniformGrid Columns="2" >
+                    <TextBox Height="23" Name="Player1_Text" VerticalAlignment="Top" Text="Player 1" />
+                    <ComboBox Height="25" Name="Player1_List" VerticalAlignment="Top"/>
+                    <TextBox Height="23" Name="Player2_Text" VerticalAlignment="Top" Text="Player 2" />
+                    <ComboBox Height="25" Name="Player2_List" VerticalAlignment="Top"  />
+                    <TextBox Height="23" Name="Player3_Text" VerticalAlignment="Top"  Text="Player 3" />
+                    <ComboBox Height="25" Name="Player3_List" VerticalAlignment="Top" />
+                    <TextBox Height="23" Name="Player4_Text" Text="Player 4" VerticalAlignment="Top" />
+                    <ComboBox Height="25" Name="Player4_List" VerticalAlignment="Top"  />
+                    <TextBox Height="23" Name="Player5_Text" Text="Player 5" VerticalAlignment="Top"  />
+                    <ComboBox Height="25" Name="Player5_List" VerticalAlignment="Top"  />
+                    <TextBox Height="23" Name="Player6_Text" Text="Player 6" VerticalAlignment="Top"  />
+                    <ComboBox Height="25" Name="Player6_List" VerticalAlignment="Top"  />
+                    <Button Content="Play"  Name="StartButton" VerticalAlignment="Top" Click="StartButton_Click" />
+                    <Button Content="Repeat Play"  Name="RepeatButton" VerticalAlignment="Top"  Click="RepeatButton_Click" />
+                </UniformGrid>
+            </UniformGrid>
+        </Border>
+
+        <!-- win tally -->
+        <Border Name="WinGrid" Background="#E1293BBC" Visibility="Collapsed" Margin="0,8.878,0,0" Grid.Row="1">
+            <UniformGrid Columns="6">
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="label22" VerticalAlignment="Top" Content="Name:" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer1_Name" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="label26" VerticalAlignment="Top" Content="Wins:" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer1_Wins" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="NetWorth:" Name="label23" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer1_NetWorth" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Name:" Name="label24" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer2_Name" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Wins:" Name="label27" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer2_Wins" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="NetWorth:" Name="label31" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer2_NetWorth" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Name:" Name="label34" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer3_Name" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Wins:" Name="label37" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer3_Wins" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="NetWorth:" Name="label39" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer3_NetWorth" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Name:" Name="label41" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer4_Name" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Wins:" Name="label43" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer4_Wins" VerticalAlignment="Top" Width="106" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="NetWorth:" Name="label46" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer4_NetWorth" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Name:" Name="label49" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer5_Name" VerticalAlignment="Top"/>
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Wins:" Name="label51" VerticalAlignment="Top"  />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer5_Wins" VerticalAlignment="Top"  />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="NetWorth:" Name="label53" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer5_NetWorth" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Name:" Name="label55" VerticalAlignment="Top"  />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer6_Name" VerticalAlignment="Top"/>
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="Wins:" Name="label58" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer6_Wins" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Content="NetWorth:" Name="label61" VerticalAlignment="Top" />
+                <Label Foreground="white" FontSize="18" FontWeight="Bold" Name="WinPlayer6_NetWorth" VerticalAlignment="Top" />
+
+            </UniformGrid>
+        </Border>
+
+        <!-- off screen helpers-->
+        <Rectangle Fill="White" Height="15" HorizontalAlignment="Left" Margin="-40,0,0,0" Name="NA_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" />
+        <Rectangle Fill="#FFEDB553" Height="15" HorizontalAlignment="Left" Margin="-40,20,0,0" Name="Selected_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" Grid.RowSpan="2" />
+        <Rectangle Fill="Silver" Height="15" HorizontalAlignment="Left" Margin="-40,9.878,0,0" Name="UnClaimed_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" Grid.Row="1" />
+        <Rectangle Fill="#FFF5A422" Height="15" HorizontalAlignment="Left" Margin="-40,30.878,0,0" Name="Selection_Square" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="15" Grid.Row="1" />
+        <Label Visibility="Collapsed" HorizontalAlignment="Left" Margin="714,0,-354,0" Name="GameSetup_Message" VerticalAlignment="Top" Width="629" Content="Select 2 to 6 players to compete head to head to acquire the most wealth" />
+        <Label Visibility="Collapsed" Content="Select from one of your highlighted tiles to build large corporations.  Use Shuffle to grab different tiles." Height="20" HorizontalAlignment="Left" Margin="714,26,-354,0" Name="PlaceTile_Message" VerticalAlignment="Top" Width="629" Grid.RowSpan="2" />
+        <Label Visibility="Collapsed" Content="After a successful merger you have the option to sell shares of the old corporation before they are worthless." Height="20" HorizontalAlignment="Left" Margin="713,20.878,-353,0" Name="SellShares_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Choose a name and share price structure for this new corporation." Height="20" HorizontalAlignment="Left" Margin="713,46.878,-353,0" Name="ChooseCorp_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Buy shares in one of the active corporations.  If no shares are avaliable or you have insuficient funds buy 0." Height="20" HorizontalAlignment="Left" Margin="713,72.878,-353,0" Name="BuyShares_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Choose the parent corporation for the newly merged corporation." Height="20" HorizontalAlignment="Left" Margin="713,98.878,-353,0" Name="ChooseParentCorp_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Trade shares 2:1 from the merged corporation into the newly created corporation." Height="20" HorizontalAlignment="Left" Margin="714,124.878,-354,0" Name="TradeShares_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content=" " Height="20" HorizontalAlignment="Left" Margin="713,159.878,-353,0" Name="NextTurn_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="The game has reached the point where a winner can be choosen, do you wish to continue playing?" Height="20" HorizontalAlignment="Left" Margin="713,185.878,-353,0" Name="ExitGame_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Congradulations, this round has come to a successful conclusion." Height="20" HorizontalAlignment="Left" Margin="713,211.878,-353,0" Name="Done_Message" VerticalAlignment="Top" Width="629" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content=" " HorizontalAlignment="Left" Margin="714,239.878,-355,0" Name="Blank_Message" VerticalAlignment="Top" Width="630" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="An avaliable corporation is required to complete this placement, there are none avaliable, please select again." HorizontalAlignment="Left" Margin="714,261.878,-355,0" Name="NoAvaliableCorps_Message" VerticalAlignment="Top" Width="630" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Corporations larger than 11 cannot be merged into another corporation, choose another tile." HorizontalAlignment="Left" Margin="714,283.878,-355,0" Name="InvalidMerger_Message" VerticalAlignment="Top" Width="630" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Content="Insufficient cash to complete this purchase, please make another selection." HorizontalAlignment="Left" Margin="714,305.878,-355,0" Name="InsufficientFunds_Message" VerticalAlignment="Top" Width="630" Grid.Row="1" />
+        <Label Visibility="Collapsed"  Height="23" HorizontalAlignment="Left" Margin="713,328.878,0,0" Name="StartErr_Message" VerticalAlignment="Top" Width="182" Content="Please select at least 2 players" Grid.Row="1" />
+
     </Grid>
 </Window>
