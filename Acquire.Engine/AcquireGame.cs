@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Ink;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 
-namespace Acquire
+namespace Acquire.Engine
 {
     public enum CorpNames { Apple=0, Berry=1, Canary=2, Drip=3, Easy=4, Frozen=5, Grape=6, NA=7, UnClaimed=8 };
     public enum AcquireGameStates { GameSetup, PlaceTile, SellShares, ChooseCorp, BuyShares, ChooseParentCorp, TradeShares, NextTurn, ExitGame, Done };

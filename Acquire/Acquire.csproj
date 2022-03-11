@@ -63,11 +63,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AcquireGame.cs" />
-    <Compile Include="Computer1.cs" />
-    <Compile Include="Computer2.cs" />
-    <Compile Include="Computer3.cs" />
-    <Compile Include="IComputer.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -98,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Acquire.Engine\Acquire.Engine.csproj">
+      <Project>{19171100-a61a-4d9f-9816-ee17f91a18bc}</Project>
+      <Name>Acquire.Engine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32201.480
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquire", "Acquire\Acquire.csproj", "{AEA396C2-1888-44A2-9602-6A0687CDD160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquire.Engine", "Acquire.Engine\Acquire.Engine.csproj", "{19171100-A61A-4D9F-9816-EE17F91A18BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AEA396C2-1888-44A2-9602-6A0687CDD160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA396C2-1888-44A2-9602-6A0687CDD160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA396C2-1888-44A2-9602-6A0687CDD160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
