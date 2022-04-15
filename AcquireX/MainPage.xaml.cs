@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 using Acquire.Engine;
 
-namespace Acquire
+namespace AcquireX
 {
     // any updates to this require an addition to playerNames (in .ctor) and create an object (in StartGame)
     public enum Oppenents { Human = 0, Random = 1, Computer2 = 2, Computer3 = 3 };
@@ -21,14 +14,10 @@ namespace Acquire
         public long NetWorth;
     }
 
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : ContentPage
     {
-        Rectangle[,] squares;
+        Button[,] squares;
         AcquireGame game;
-        DispatcherTimer aiTimer;
         Dictionary<int, IComputer> computers;
         IComputer lastComputer;
         AcquireGameStates lastState;
@@ -93,17 +82,17 @@ namespace Acquire
         private const string Lwinwin = "_Wins";
         private const string Lwinnetworth = "_NetWorth";
 
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
 
             // track the squres
-            squares = new Rectangle[AcquireConstants.BoardHeight, AcquireConstants.BoardWidth];
+            squares = new Button[AcquireConstants.BoardHeight, AcquireConstants.BoardWidth];
             for (int dim0 = 0; dim0 < AcquireConstants.BoardHeight; dim0++)
             {
                 for (int dim1 = 0; dim1 < AcquireConstants.BoardWidth; dim1++)
                 {
-                    squares[dim0, dim1] = (Rectangle)this.FindName("rectangle" + ((dim1 + 1) + (dim0 * 12)).ToString());
+                    squares[dim0, dim1] = (Button)this.FindByName( $"rectangle{((dim1 + 1) + (dim0 * 12))}");
 
                     if (null == squares[dim0, dim1]) throw new NullReferenceException("Square " + dim0 + " x " + dim1 + " is null!");
                 }
@@ -121,7 +110,7 @@ namespace Acquire
             playerNames.Add("Computer Hard", Oppenents.Computer2);
             playerNames.Add("Computer Very Hard", Oppenents.Computer3);
             game = null;
-            GetItem<Label>(Laddmsg).Content = "";  // fix up the bad looking red block
+            GetItem<Label>(Laddmsg).Text = "";  // fix up the bad looking red block
             repeatAgain = false;
             lifetime = new Dictionary<int, WinStats>();
 
@@ -129,22 +118,33 @@ namespace Acquire
             for (int i = 1; i <= AcquireConstants.MaxPlayers; i++)
             {
                 string basename = Lstartbase + i;
-                GetItem<ComboBox>(basename, Lstartlist).Items.Clear();
+                GetItem<Picker>(basename, Lstartlist).Items.Clear();
                 foreach (string name in playerNames.Keys)
                 {
-                    GetItem<ComboBox>(basename, Lstartlist).Items.Add(name);
+                    GetItem<Picker>(basename, Lstartlist).Items.Add(name);
                 }
 
                 // set the defaults
-                if (i == 1) GetItem<ComboBox>(basename, Lstartlist).SelectedIndex = 0;
-                if (i == 2) GetItem<ComboBox>(basename, Lstartlist).SelectedIndex = 1;
+                if (i == 1) GetItem<Picker>(basename, Lstartlist).SelectedIndex = 0;
+                if (i == 2) GetItem<Picker>(basename, Lstartlist).SelectedIndex = 1;
             }
 
             // start the AI thread
-            aiTimer = new DispatcherTimer();
-            aiTimer.Interval = new TimeSpan(0, 0, 0, 0, 100);
-            aiTimer.Tick += new EventHandler(AdvanceAI_Callback);
-            aiTimer.Start();
+            /*
+            Device.StartTimer(
+                interval: new TimeSpan(0, 0, 0, 0, 100),
+                () =>
+                {
+                    AdvanceAI_Callback();
+                    // run again
+                    return true;
+                });
+            */
+
+            var timer = Dispatcher.CreateTimer();
+            timer.Tick += AdvanceAI_Callback;
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 100);
+            timer.Start();
         }
 
         // helpers
@@ -159,7 +159,7 @@ namespace Acquire
             return computers[player.ID];
         }
 
-        private bool GetCoords(Rectangle r, out int dim0, out int dim1)
+        private bool GetCoords(Button r, out int dim0, out int dim1)
         {
             dim0 = dim1 = -1;
 
@@ -182,17 +182,23 @@ namespace Acquire
 
         private T GetItem<T>(string name)
         {
-            return (T)this.FindName(name);
+            return (T)this.FindByName(name);
         }
 
         private T GetItem<T>(CorpNames corp, string type)
         {
-            return (T)this.FindName(corp.ToString() + type);
+            return (T)this.FindByName(corp.ToString() + type);
         }
 
         private T GetItem<T>(string name, string type)
         {
-            return (T)this.FindName(name + type);
+            return (T)this.FindByName(name + type);
+        }
+
+        private CorpNames ToCorpNames(object value)
+        {
+            if (Enum.TryParse(typeof(CorpNames), value as string, out object result)) return (CorpNames)result;
+            throw new Exception($"failed to parse CorpsName : {value}");
         }
 
         // AI logic
@@ -309,7 +315,7 @@ namespace Acquire
         // UI and game state
         private void AdvanceUI()
         {
-            ComboBox corpList;
+            Picker corpList;
 
             // plan next move
             switch (game.State)
@@ -318,47 +324,47 @@ namespace Acquire
                     // show UI
                     if (!game.CurrentPlayer.IsComputer)
                     {
-                        ExitGameGrid.Visibility = System.Windows.Visibility.Visible;
+                        ExitGameGrid.IsVisible = true; 
                     }
                     break;
                 case AcquireGameStates.Done:
                     // show the UI
-                    ExitGameGrid.Visibility = System.Windows.Visibility.Collapsed;
-                    FinalDisplayGrid.Visibility = System.Windows.Visibility.Visible;
+                    ExitGameGrid.IsVisible = false;
+                    FinalDisplayGrid.IsVisible = true;
 
                     // display the final results
                     DisplayFinalResults(game.Players, game.Corporations);
                     break;
                 case AcquireGameStates.PlaceTile:
                     // show UI
-                    ExitGameGrid.Visibility = System.Windows.Visibility.Collapsed;
+                    ExitGameGrid.IsVisible = false;
                     break;
                 case AcquireGameStates.BuyShares:
                     // populate the pull downs for the shares to purchase
 
                     // hide UI
-                    SellGrid.Visibility = System.Windows.Visibility.Collapsed;
-                    ChooseCorpGrid.Visibility = System.Windows.Visibility.Collapsed;
+                    SellGrid.IsVisible = false;
+                    ChooseCorpGrid.IsVisible = false;
 
                     if (!game.CurrentPlayer.IsComputer)
                     {
-                        ComboBox buylist;
+                        Picker buylist;
                         List<CorpNames>[] corps;
 
                         // show the UI
-                        BuyGrid.Visibility = System.Windows.Visibility.Visible;
+                        BuyGrid.IsVisible = true;
 
                         // populate the information
                         corps = game.SharesToBuy;
                         for (int i = 0; i < corps.Length; i++)
                         {
-                            buylist = GetItem<ComboBox>(Lbuycorp[i]);
+                            buylist = GetItem<Picker>(Lbuycorp[i]);
                             buylist.Items.Clear();
-                            buylist.Items.Add(CorpNames.NA);
+                            buylist.Items.Add(CorpNames.NA.ToString());
                             buylist.SelectedIndex = 0;
                             foreach (CorpNames corp in corps[i])
                             {
-                                buylist.Items.Add(corp);
+                                buylist.Items.Add(corp.ToString());
                             }
                         }
                     }
@@ -368,14 +374,14 @@ namespace Acquire
                     if (!game.CurrentPlayer.IsComputer)
                     {
                         // show UI
-                        ChooseCorpGrid.Visibility = System.Windows.Visibility.Visible;
+                        ChooseCorpGrid.IsVisible = true;
 
                         // display information
-                        corpList = GetItem<ComboBox>(Lnewcorp);
+                        corpList = GetItem<Picker>(Lnewcorp);
                         corpList.Items.Clear();
                         foreach (CorpNames corp in game.AvailableCorporations)
                         {
-                            corpList.Items.Add(corp);
+                            corpList.Items.Add(corp.ToString());
                         }
                         corpList.SelectedIndex = 0;
                     }
@@ -385,51 +391,51 @@ namespace Acquire
                     if (!game.CurrentPlayer.IsComputer)
                     {
                         // show UI
-                        ChooseCorpGrid.Visibility = System.Windows.Visibility.Visible;
+                        ChooseCorpGrid.IsVisible = true;
 
                         // display information
-                        corpList = GetItem<ComboBox>(Lnewcorp);
+                        corpList = GetItem<Picker>(Lnewcorp);
                         corpList.Items.Clear();
                         foreach (CorpNames corp in game.ParentCorporations)
                         {
-                            corpList.Items.Add(corp);
+                            corpList.Items.Add(corp.ToString());
                         }
                         corpList.SelectedIndex = 0;
                     }
                     break;
                 case AcquireGameStates.NextTurn:
                     // turn off UI
-                    BuyGrid.Visibility = System.Windows.Visibility.Collapsed;
+                     BuyGrid.IsVisible = false;
 
                     // end turn
                     game.EndTurn();
 
                     if (game.State == AcquireGameStates.ExitGame && !game.CurrentPlayer.IsComputer)
                     {
-                        ExitGameGrid.Visibility = System.Windows.Visibility.Visible;
+                         ExitGameGrid.IsVisible = true;
                     }
                     break;
                 case AcquireGameStates.SellShares:
                     // NOTE! This section is reintrant... it is called multiple times to get answers from everyone
 
                     // hide UI
-                    TradeGrid.Visibility = System.Windows.Visibility.Collapsed;
+                    TradeGrid.IsVisible = false;
 
                     if (!game.SharesToSell.Player.IsComputer)
                     {
                         // show UI
-                        SellGrid.Visibility = System.Windows.Visibility.Visible;
+                        SellGrid.IsVisible = true;
 
                         // display user information
-                        GetItem<Label>(Lsellname).Content = game.SharesToSell.Player.Name;
-                        GetItem<Label>(Lsellcorp).Content = game.SharesToSell.Corporation;
-                        GetItem<Label>(Lsellprice).Content = "$" + game.SharesToSell.Price;
-                        GetItem<ComboBox>(Lselllist).Items.Clear();
+                        GetItem<Label>(Lsellname).Text = game.SharesToSell.Player.Name;
+                        GetItem<Label>(Lsellcorp).Text = $"{game.SharesToSell.Corporation}";
+                        GetItem<Label>(Lsellprice).Text = "$" + game.SharesToSell.Price;
+                        GetItem<Picker>(Lselllist).Items.Clear();
                         for (int shares = 0; shares <= game.SharesToSell.Player.Shares(game.SharesToSell.Corporation); shares++)
                         {
-                            GetItem<ComboBox>(Lselllist).Items.Add(shares);
+                            GetItem<Picker>(Lselllist).Items.Add($"{shares}");
                         }
-                        GetItem<ComboBox>(Lselllist).SelectedIndex = 0;
+                        GetItem<Picker>(Lselllist).SelectedIndex = 0;
                     }
 
                     Refresh(game.SharesToSell.Player);
@@ -438,25 +444,25 @@ namespace Acquire
                     // NOTE! This section is reintrant... it is called multiple times to get answers from everyone
 
                     // hide UI
-                    ChooseCorpGrid.Visibility = System.Windows.Visibility.Collapsed;
+                    ChooseCorpGrid.IsVisible = false;
 
                     if (!game.SharesToTrade.Player.IsComputer)
                     {
                         // show UI
-                        TradeGrid.Visibility = System.Windows.Visibility.Visible;
+                        TradeGrid.IsVisible = true;
 
                         // display the user information
-                        GetItem<Label>(Ltradename).Content = game.SharesToTrade.Player.Name;
-                        GetItem<Label>(Ltradecorp).Content = game.SharesToTrade.MergedCorp + "/" + game.SharesToTrade.ParentCorp;
-                        GetItem<Label>(Ltraderes).Content = "";
-                        GetItem<Label>(Ltradebonuskind).Content = game.SharesToTrade.BonusKind;
-                        GetItem<Label>(Ltradebonus).Content = "$" + game.SharesToTrade.Bonus;
-                        GetItem<ComboBox>(Ltradelist).Items.Clear();
+                        GetItem<Label>(Ltradename).Text = game.SharesToTrade.Player.Name;
+                        GetItem<Label>(Ltradecorp).Text = game.SharesToTrade.MergedCorp + "/" + game.SharesToTrade.ParentCorp;
+                        GetItem<Label>(Ltraderes).Text = "";
+                        GetItem<Label>(Ltradebonuskind).Text = $"{game.SharesToTrade.BonusKind}";
+                        GetItem<Label>(Ltradebonus).Text = "$" + game.SharesToTrade.Bonus;
+                        GetItem<Picker>(Ltradelist).Items.Clear();
                         for (int shares = 0; shares <= game.SharesToTrade.Player.Shares(game.SharesToTrade.MergedCorp) && (shares / 2) <= game[game.SharesToTrade.ParentCorp].Shares; shares += 2)
                         {
-                            GetItem<ComboBox>(Ltradelist).Items.Add(shares);
+                            GetItem<Picker>(Ltradelist).Items.Add($"{shares}");
                         }
-                        GetItem<ComboBox>(Ltradelist).SelectedIndex = 0;
+                        GetItem<Picker>(Ltradelist).SelectedIndex = 0;
                     }
 
                     Refresh(game.SharesToTrade.Player);
@@ -475,17 +481,17 @@ namespace Acquire
             int cnt;
 
             // hide UI
-            FinalDisplayGrid.Visibility = System.Windows.Visibility.Collapsed;
-            WinGrid.Visibility = System.Windows.Visibility.Visible;
+            FinalDisplayGrid.IsVisible = false;
+            WinGrid.IsVisible = true;
 
             // clear them all out
             for (int i = 1; i <= AcquireConstants.MaxPlayers; i++)
             {
                 string basename = Lwinbase + i;
 
-                GetItem<Label>(basename, Lwinname).Content = "";
-                GetItem<Label>(basename, Lwinwin).Content = 0;
-                GetItem<Label>(basename, Lwinnetworth).Content = "$" + 0;
+                GetItem<Label>(basename, Lwinname).Text = "";
+                GetItem<Label>(basename, Lwinwin).Text = "0";
+                GetItem<Label>(basename, Lwinnetworth).Text = "$0";
             }
 
             if (lifetime.Count > 0)
@@ -496,9 +502,9 @@ namespace Acquire
                     int id = player.ID;
                     string basename = Lwinbase + cnt;
 
-                    GetItem<Label>(basename, Lwinname).Content = lifetime[id].Name;
-                    GetItem<Label>(basename, Lwinwin).Content = lifetime[id].Wins;
-                    GetItem<Label>(basename, Lwinnetworth).Content = "$" + lifetime[id].NetWorth;
+                    GetItem<Label>(basename, Lwinname).Text = lifetime[id].Name;
+                    GetItem<Label>(basename, Lwinwin).Text = $"{lifetime[id].Wins}";
+                    GetItem<Label>(basename, Lwinnetworth).Text = "$" + lifetime[id].NetWorth;
 
                     cnt++;
                 }
@@ -513,21 +519,21 @@ namespace Acquire
             int cnt;
 
             // hide UI
-            WinGrid.Visibility = System.Windows.Visibility.Collapsed;
+            WinGrid.IsVisible = false;
 
             // clear them all out
             for (int i = 1; i <= AcquireConstants.MaxPlayers; i++)
             {
                 string basename = Ldoneplayer + i;
 
-                GetItem<Label>(basename, Ldonename).Content = "";
-                GetItem<Label>(basename, Ldonecash).Content = "$";
+                GetItem<Label>(basename, Ldonename).Text = "";
+                GetItem<Label>(basename, Ldonecash).Text = "$";
 
                 foreach (CorpStats corp in corps)
                 {
-                    GetItem<Label>(basename, Ldonesep + corp.Name).Content = 0;
+                    GetItem<Label>(basename, Ldonesep + corp.Name).Text = "0";
                 }
-                GetItem<Label>(basename, Ldonenetworth).Content = "$";
+                GetItem<Label>(basename, Ldonenetworth).Text = "$";
             }
 
             // calculate networth and display
@@ -547,17 +553,17 @@ namespace Acquire
                 }
 
                 // display the player information
-                GetItem<Label>(basename, Ldonename).Content = player.Name;
-                GetItem<Label>(basename, Ldonecash).Content = "$" + player.Cash;
+                GetItem<Label>(basename, Ldonename).Text = player.Name;
+                GetItem<Label>(basename, Ldonecash).Text = "$" + player.Cash;
 
                 networth = 0;
                 foreach (CorpStats corp in corps)
                 {
-                    GetItem<Label>(basename, Ldonesep + corp.Name).Content = player.Shares(corp.Name);
+                    GetItem<Label>(basename, Ldonesep + corp.Name).Text = $"{player.Shares(corp.Name)}";
                     networth += player.Shares(corp.Name) * corp.Price;
                 }
                 networth += player.Cash;
-                GetItem<Label>(basename, Ldonenetworth).Content = "$" + networth;
+                GetItem<Label>(basename, Ldonenetworth).Text = "$" + networth;
                 lifetime[player.ID].NetWorth += networth;
 
                 if (networth > maxNetworth)
@@ -569,7 +575,7 @@ namespace Acquire
                 cnt++;
             }
 
-            GetItem<Label>(Ldonewinner).Content = winner.Name;
+            GetItem<Label>(Ldonewinner).Text = winner.Name;
             lifetime[winner.ID].Wins++;
         }
 
@@ -582,16 +588,15 @@ namespace Acquire
             //DisplayFinalResults(game.Players, game.Corporations);
 
             // update status
-            GetItem<Label>(Lstatus).Content = GetItem<Label>(game.State + Lstatustag).Content;
+            GetItem<Label>(Lstatus).Text = GetItem<Label>(game.State + Lstatustag).Text;
             if (game.Message == Acquire.Engine.AdditionalMessage.Blank)
             {
-                GetItem<Label>(Laddmsg).Visibility = Visibility.Collapsed;
+                GetItem<Label>(Laddmsg).Text = "";
             }
             else
             {
                 var label = GetItem<Label>(Laddmsg);
-                label.Content = GetItem<Label>(game.Message + Lstatustag).Content;
-                label.Visibility = Visibility.Visible;
+                label.Text = GetItem<Label>(game.Message + Lstatustag).Text;
             }
 
             // update corp stats
@@ -600,21 +605,21 @@ namespace Acquire
                 CorpNames corp = (CorpNames)c;
                 CorpStats stats = game[corp];
 
-                GetItem<Label>(corp, Lshares).Content = stats.Shares;
-                GetItem<Label>(corp, Lprice).Content = "$" + stats.Price;
-                GetItem<Label>(corp, Lsize).Content = stats.Size;
-                GetItem<Label>(corp, Lbonus).Content = "$" + stats.BonusMax + "/$" + stats.BonusMin;
+                GetItem<Label>(corp, Lshares).Text = $"{stats.Shares}";
+                GetItem<Label>(corp, Lprice).Text = "$" + stats.Price;
+                GetItem<Label>(corp, Lsize).Text = $"{stats.Size}";
+                GetItem<Label>(corp, Lbonus).Text = "$" + stats.BonusMax + "/$" + stats.BonusMin;
             }
 
             // update player stats
             PlayerStats pstats = player;
-            GetItem<Label>(Lname).Content = pstats.Name;
-            GetItem<Label>(Lcash).Content = pstats.IsComputer ? "$???" : "$" + pstats.Cash;
+            GetItem<Label>(Lname).Text = pstats.Name;
+            GetItem<Label>(Lcash).Text = pstats.IsComputer ? "$???" : "$" + pstats.Cash;
             for (int c = 0; c < AcquireConstants.CorpCount; c++)
             {
                 CorpNames corp = (CorpNames)c;
 
-                GetItem<Label>(corp, Lcount).Content = pstats.IsComputer ? "?" : pstats.Shares(corp).ToString();
+                GetItem<Label>(corp, Lcount).Text = pstats.IsComputer ? "?" : pstats.Shares(corp).ToString();
             }
 
             // calculate the networth
@@ -624,7 +629,7 @@ namespace Acquire
                 networth += player.Shares(corp.Name) * corp.Price;
             }
             networth += player.Cash;
-            GetItem<Label>(Lnetworth).Content = pstats.IsComputer ? "$???" : "$" + networth;
+            GetItem<Label>(Lnetworth).Text = pstats.IsComputer ? "$???" : "$" + networth;
 
             // paint the board
             board = game.RawBoard;
@@ -632,7 +637,7 @@ namespace Acquire
             {
                 for (int dim1 = 0; dim1 < board.GetLength(1); dim1++)
                 {
-                    squares[dim0, dim1].Fill = GetItem<Rectangle>(board[dim0, dim1], Lcolor).Fill;
+                    squares[dim0, dim1].BackgroundColor = GetItem<Button>(board[dim0, dim1], Lcolor).BackgroundColor;
                 }
             }
 
@@ -641,12 +646,12 @@ namespace Acquire
             {
                 foreach (Square tile in game.CurrentPlayer.Tiles)
                 {
-                    squares[tile.Dim0, tile.Dim1].Fill = GetItem<Rectangle>(Lselection, Lcolor).Fill;
+                    squares[tile.Dim0, tile.Dim1].BackgroundColor = GetItem<Button>(Lselection, Lcolor).BackgroundColor;
                 }
             }
 
             // display the selected tile
-            squares[game.CurrentTile.Dim0, game.CurrentTile.Dim1].Fill = GetItem<Rectangle>(Lselected, Lcolor).Fill;
+            squares[game.CurrentTile.Dim0, game.CurrentTile.Dim1].BackgroundColor = GetItem<Button>(Lselected, Lcolor).BackgroundColor;
         }
 
         // manipulation
@@ -661,18 +666,18 @@ namespace Acquire
             for (int i = 1; i <= AcquireConstants.MaxPlayers; i++)
             {
                 string basename = Lstartbase + i;
-                if (null != GetItem<ComboBox>(basename, Lstartlist).SelectedItem)
+                if (null != GetItem<Picker>(basename, Lstartlist).SelectedItem)
                 {
                     string[] npair = new string[2];
-                    npair[0] = (string)GetItem<ComboBox>(basename, Lstartlist).SelectedItem;
-                    npair[1] = (string)GetItem<TextBox>(basename, Lstarttext).Text;
+                    npair[0] = (string)GetItem<Picker>(basename, Lstartlist).SelectedItem;
+                    npair[1] = (string)GetItem<Entry>(basename, Lstarttext).Text;
                     players.Add(npair);
                 }
             }
 
             if (players.Count < 2)
             {
-                GetItem<TextBlock>(Lstartstatus).Text = (string)GetItem<Label>(Lstarterr).Content;
+                GetItem<Label>(Lstartstatus).Text = (string)GetItem<Label>(Lstarterr).Text;
                 return;
             }
 
@@ -705,13 +710,14 @@ namespace Acquire
                 }
             }
 
-            // hide the UI
-            StartGrid.Visibility = System.Windows.Visibility.Collapsed;
-            FinalDisplayGrid.Visibility = System.Windows.Visibility.Collapsed;
+            // hide/show the UI
+            StartGrid.IsVisible = false;
+            FinalDisplayGrid.IsVisible = false;
+            GameGrid.IsVisible = true;
             if (lifetime.Count > 0 && (computers.Count == game.Players.Count))
             {
                 // only display if there are computer players
-                // todo - not sure what the point of this is
+                // TODO - not sure when this is supposed to show
                 //DisplayLifetime();
             }
 
@@ -840,14 +846,14 @@ namespace Acquire
         }
 
         // handlers
-        private void AdvanceAI_Callback(object o, EventArgs e)
+        private void AdvanceAI_Callback(object sender, EventArgs e)
         {
             AdvanceAI();
         }
 
-        private void Square_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void Square_MouseLeftButtonDown(object sender, EventArgs e)
         {
-            Rectangle r = (Rectangle)sender;
+            Button r = (Button)sender;
             int dim0, dim1;
 
             if (GetCoords(r, out dim0, out dim1))
@@ -856,36 +862,36 @@ namespace Acquire
             }
         }
 
-        private void Square_MouseEnter(object sender, MouseEventArgs e)
+        private void Square_MouseEnter(object sender, FocusEventArgs e)
         {
         }
 
-        private void Square_MouseLeave(object sender, MouseEventArgs e)
+        private void Square_MouseLeave(object sender, FocusEventArgs e)
         {
         }
 
-        private void BuyButton_Click(object sender, RoutedEventArgs e)
+        private void BuyButton_Click(object sender, EventArgs e)
         {
             CorpNames[] corps = new CorpNames[AcquireConstants.MaxSharePurchase];
 
             // collect up purchaes
             for (int i = 0; i < AcquireConstants.MaxSharePurchase; i++)
             {
-                if (null == GetItem<ComboBox>(Lbuycorp[i]).SelectedItem) corps[i] = CorpNames.NA;
-                else corps[i] = (CorpNames)GetItem<ComboBox>(Lbuycorp[i]).SelectedItem;
+                if (null == GetItem<Picker>(Lbuycorp[i]).SelectedItem) corps[i] = CorpNames.NA;
+                else corps[i] = ToCorpNames(GetItem<Picker>(Lbuycorp[i]).SelectedItem);
             }
 
             BuyShares(corps);
         }
 
-        private void NewCorpButton_Click(object sender, RoutedEventArgs e)
+        private void NewCorpButton_Click(object sender, EventArgs e)
         {
-            if (null == GetItem<ComboBox>(Lnewcorp).SelectedItem) return;
+            if (null == GetItem<Picker>(Lnewcorp).SelectedItem) return;
 
-            ChooseCorp((CorpNames)GetItem<ComboBox>(Lnewcorp).SelectedItem);
+            ChooseCorp(ToCorpNames(GetItem<Picker>(Lnewcorp).SelectedItem));
         }
 
-        private void BuyCorp_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void BuyCorp_List_SelectionChanged(object sender, EventArgs e)
         {
             int cost = 0;
 
@@ -894,63 +900,95 @@ namespace Acquire
             // add up the cost
             for (int i = 0; i < AcquireConstants.MaxSharePurchase; i++)
             {
-                if (null != GetItem<ComboBox>(Lbuycorp[i]).SelectedItem && CorpNames.NA != (CorpNames)GetItem<ComboBox>(Lbuycorp[i]).SelectedItem)
-                    cost += game[(CorpNames)GetItem<ComboBox>(Lbuycorp[i]).SelectedItem].Price;
+                if (null != GetItem<Picker>(Lbuycorp[i]).SelectedItem && CorpNames.NA != ToCorpNames(GetItem<Picker>(Lbuycorp[i]).SelectedItem))
+                    cost += game[ToCorpNames(GetItem<Picker>(Lbuycorp[i]).SelectedItem)].Price;
             }
 
             // post the cost
-            GetItem<Label>(Lsharecost).Content = "$" + cost;
+            GetItem<Label>(Lsharecost).Text = "$" + cost;
         }
 
-        private void TradeNumber_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TradeNumber_List_SelectionChanged(object sender, EventArgs e)
         {
             if (game.State != AcquireGameStates.TradeShares) return;
 
-            if (null != GetItem<ComboBox>(Ltradelist).SelectedItem)
-                GetItem<Label>(Ltraderes).Content = ((int)GetItem<ComboBox>(Ltradelist).SelectedItem / 2);
+            if (null != GetItem<Picker>(Ltradelist).SelectedItem)
+            {
+                if (Int32.TryParse(GetItem<Picker>(Ltradelist).SelectedItem as string, out int val))
+                {
+                    GetItem<Label>(Ltraderes).Text = $"{(val / 2)}";
+                }
+                else throw new Exception("not able to convert trade to int");
+            }
         }
 
-        private void SellNumber_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void SellNumber_List_SelectionChanged(object sender, EventArgs e)
         {
             if (game.State != AcquireGameStates.SellShares) return;
 
-            if (null != GetItem<ComboBox>(Lselllist).SelectedItem)
-                GetItem<Label>(Lsellprice).Content = "$" + ((int)GetItem<ComboBox>(Lselllist).SelectedItem * game.SharesToSell.Price);
+            if (null != GetItem<Picker>(Lselllist).SelectedItem)
+            {
+                if (Int32.TryParse(GetItem<Picker>(Lselllist).SelectedItem as string, out int val))
+                {
+                    GetItem<Label>(Lsellprice).Text = "$" + (val * game.SharesToSell.Price);
+                }
+                else throw new Exception("not able to convert sell to int");
+            }
         }
 
-        private void TradeButton_Click(object sender, RoutedEventArgs e)
+        private void TradeButton_Click(object sender, EventArgs e)
         {
-            TradeShares(GetItem<ComboBox>(Ltradelist).SelectedItem == null ? 0 : (int)GetItem<ComboBox>(Ltradelist).SelectedItem);
+            if (GetItem<Picker>(Ltradelist).SelectedItem == null)
+            {
+                TradeShares(0);
+            }
+            else if (Int32.TryParse(GetItem<Picker>(Ltradelist).SelectedItem as string, out int val))
+            {
+                TradeShares(val);
+            }
+            else throw new Exception("not able to convert trade to int");
         }
 
-        private void SellButton_Click(object sender, RoutedEventArgs e)
+        private void SellButton_Click(object sender, EventArgs e)
         {
-            SellShares(GetItem<ComboBox>(Lselllist).SelectedItem == null ? 0 : (int)GetItem<ComboBox>(Lselllist).SelectedItem);
+            if (GetItem<Picker>(Lselllist).SelectedItem == null)
+            {
+                SellShares(0);
+            }
+            else if (Int32.TryParse(GetItem<Picker>(Lselllist).SelectedItem as string, out int val))
+            {
+                SellShares(val);
+            }
+            else throw new Exception("not able to convert sell to int");
         }
 
-        private void NoButton_Click(object sender, RoutedEventArgs e)
+        private void NoButton_Click(object sender, EventArgs e)
         {
             ContinueGame();
         }
 
-        private void YesButton_Click(object sender, RoutedEventArgs e)
+        private void YesButton_Click(object sender, EventArgs e)
         {
             EndGame();
         }
 
-        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        private void ClearButton_Click(object sender, EventArgs e)
         {
             // reset the pull downs
             AdvanceUI();
         }
 
-        private void ShuffleTilesButton_Click(object sender, RoutedEventArgs e)
+        private void ShuffleTilesButton_Click(object sender, EventArgs e)
         {
             ShuffleTiles();
         }
 
-        private void StartButton_Click(object sender, RoutedEventArgs e)
+        private void StartButton_Click(object sender, EventArgs e)
         {
+            // hide the win grid
+            FinalDisplayGrid.IsVisible = false;
+            WinGrid.IsVisible = false;
+
             // set repeat
             repeatAgain = false;
 
@@ -958,15 +996,15 @@ namespace Acquire
             StartGame();
         }
 
-        private void StartOverButton_Click(object sender, RoutedEventArgs e)
+        private void StartOverButton_Click(object sender, EventArgs e)
         {
             // show UI
-            FinalDisplayGrid.Visibility = System.Windows.Visibility.Collapsed;
-            StartGrid.Visibility = System.Windows.Visibility.Visible;
-            WinGrid.Visibility = System.Windows.Visibility.Collapsed;
+            FinalDisplayGrid.IsVisible = false;
+            StartGrid.IsVisible = true;
+            WinGrid.IsVisible = false;
         }
 
-        private void RepeatButton_Click(object sender, RoutedEventArgs e)
+        private void RepeatButton_Click(object sender, EventArgs e)
         {
             // set repeat
             repeatAgain = true;
@@ -976,4 +1014,3 @@ namespace Acquire
         }
     }
 }
-

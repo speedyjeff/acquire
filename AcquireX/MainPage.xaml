@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcquireX.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- game -->
+        <Grid x:Name="GameGrid" Grid.Row="1" IsVisible="true">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="500"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="500"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="500"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- game board -->
+                <Border  Stroke="Black" StrokeThickness="2" Padding="5" Grid.Column="0">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="#FF958FF2" Offset="0" />
+                            <GradientStop Color="#64FFFFFF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="0" BackgroundColor="White" x:Name="rectangle1" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave" />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="1" BackgroundColor="White" x:Name="rectangle2" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave" />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="2" BackgroundColor="White" x:Name="rectangle3" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="3" BackgroundColor="White" x:Name="rectangle4" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="4" BackgroundColor="White" x:Name="rectangle5" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="5" BackgroundColor="White" x:Name="rectangle6" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="6" BackgroundColor="White" x:Name="rectangle7" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="7" BackgroundColor="White" x:Name="rectangle8" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="8" BackgroundColor="White" x:Name="rectangle9" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="9" BackgroundColor="White" x:Name="rectangle10" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="10" BackgroundColor="White" x:Name="rectangle11" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="0" Grid.Column="11" BackgroundColor="White" x:Name="rectangle12" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"  />
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="0" BackgroundColor="White" x:Name="rectangle13" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="1" BackgroundColor="White" x:Name="rectangle14" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="2" BackgroundColor="White" x:Name="rectangle15" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="3" BackgroundColor="White" x:Name="rectangle16" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="4" BackgroundColor="White" x:Name="rectangle17" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="5" BackgroundColor="White" x:Name="rectangle18" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="6" BackgroundColor="White" x:Name="rectangle19" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="7" BackgroundColor="White" x:Name="rectangle20" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="8" BackgroundColor="White" x:Name="rectangle21" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="9" BackgroundColor="White" x:Name="rectangle22" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="10" BackgroundColor="White" x:Name="rectangle23" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="1" Grid.Column="11" BackgroundColor="White" x:Name="rectangle24" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="0" BackgroundColor="White" x:Name="rectangle25" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="1" BackgroundColor="White" x:Name="rectangle26" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="2" BackgroundColor="White" x:Name="rectangle27" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="3" BackgroundColor="White" x:Name="rectangle28" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="4" BackgroundColor="White" x:Name="rectangle29" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="5" BackgroundColor="White" x:Name="rectangle30" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="6" BackgroundColor="White" x:Name="rectangle31" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="7" BackgroundColor="White" x:Name="rectangle32" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="8" BackgroundColor="White" x:Name="rectangle33" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="9" BackgroundColor="White" x:Name="rectangle34" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="10" BackgroundColor="White" x:Name="rectangle35" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="2" Grid.Column="11" BackgroundColor="White" x:Name="rectangle36" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="0" BackgroundColor="White" x:Name="rectangle37" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="1" BackgroundColor="White" x:Name="rectangle38" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="2" BackgroundColor="White" x:Name="rectangle39" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="3" BackgroundColor="White" x:Name="rectangle40" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="4" BackgroundColor="White" x:Name="rectangle41" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="5" BackgroundColor="White" x:Name="rectangle42" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="6" BackgroundColor="White" x:Name="rectangle43" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="7" BackgroundColor="White" x:Name="rectangle44" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="8" BackgroundColor="White" x:Name="rectangle45" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="9" BackgroundColor="White" x:Name="rectangle46" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="10" BackgroundColor="White" x:Name="rectangle47" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="3" Grid.Column="11" BackgroundColor="White" x:Name="rectangle48" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="0" BackgroundColor="White" x:Name="rectangle49" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="1" BackgroundColor="White" x:Name="rectangle50" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="2" BackgroundColor="White" x:Name="rectangle51" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="3" BackgroundColor="White" x:Name="rectangle52" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="4" BackgroundColor="White" x:Name="rectangle53" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="5" BackgroundColor="White" x:Name="rectangle54" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="6" BackgroundColor="White" x:Name="rectangle55" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="7" BackgroundColor="White" x:Name="rectangle56" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="8" BackgroundColor="White" x:Name="rectangle57" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="9" BackgroundColor="White" x:Name="rectangle58" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="10" BackgroundColor="White" x:Name="rectangle59" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="4" Grid.Column="11" BackgroundColor="White" x:Name="rectangle60" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="0" BackgroundColor="White" x:Name="rectangle61" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="1" BackgroundColor="White" x:Name="rectangle62" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="2" BackgroundColor="White" x:Name="rectangle63" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="3" BackgroundColor="White" x:Name="rectangle64" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="4" BackgroundColor="White" x:Name="rectangle65" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="5" BackgroundColor="White" x:Name="rectangle66" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="6" BackgroundColor="White" x:Name="rectangle67" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="7" BackgroundColor="White" x:Name="rectangle68" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="8" BackgroundColor="White" x:Name="rectangle69" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="9" BackgroundColor="White" x:Name="rectangle70" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="10" BackgroundColor="White" x:Name="rectangle71" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="5" Grid.Column="11" BackgroundColor="White" x:Name="rectangle72" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="0" BackgroundColor="White" x:Name="rectangle73" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="1" BackgroundColor="White" x:Name="rectangle74" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="2" BackgroundColor="White" x:Name="rectangle75" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="3" BackgroundColor="White" x:Name="rectangle76" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="4" BackgroundColor="White" x:Name="rectangle77" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="5" BackgroundColor="White" x:Name="rectangle78" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="6" BackgroundColor="White" x:Name="rectangle79" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="7" BackgroundColor="White" x:Name="rectangle80" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="8" BackgroundColor="White" x:Name="rectangle81" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="9" BackgroundColor="White" x:Name="rectangle82" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="10" BackgroundColor="White" x:Name="rectangle83" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="6" Grid.Column="11" BackgroundColor="White" x:Name="rectangle84" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="0" BackgroundColor="White" x:Name="rectangle85" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="1" BackgroundColor="White" x:Name="rectangle86" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="2" BackgroundColor="White" x:Name="rectangle87" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="3" BackgroundColor="White" x:Name="rectangle88" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="4" BackgroundColor="White" x:Name="rectangle89" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="5" BackgroundColor="White" x:Name="rectangle90" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="6" BackgroundColor="White" x:Name="rectangle91" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="7" BackgroundColor="White" x:Name="rectangle92" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="8" BackgroundColor="White" x:Name="rectangle93" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="9" BackgroundColor="White" x:Name="rectangle94" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="10" BackgroundColor="White" x:Name="rectangle95" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="7" Grid.Column="11" BackgroundColor="White" x:Name="rectangle96" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="0" BackgroundColor="White" x:Name="rectangle97" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="1" BackgroundColor="White" x:Name="rectangle98" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="2" BackgroundColor="White" x:Name="rectangle99" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="3" BackgroundColor="White" x:Name="rectangle100" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="4" BackgroundColor="White" x:Name="rectangle101" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="5" BackgroundColor="White" x:Name="rectangle102" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="6" BackgroundColor="White" x:Name="rectangle103" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="7" BackgroundColor="White" x:Name="rectangle104" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="8" BackgroundColor="White" x:Name="rectangle105" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="9" BackgroundColor="White" x:Name="rectangle106" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="10" BackgroundColor="White" x:Name="rectangle107" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="8" Grid.Column="11" BackgroundColor="White" x:Name="rectangle108" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="0" BackgroundColor="White" x:Name="rectangle109" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="1" BackgroundColor="White" x:Name="rectangle110" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="2" BackgroundColor="White" x:Name="rectangle111" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="3" BackgroundColor="White" x:Name="rectangle112" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="4" BackgroundColor="White" x:Name="rectangle113" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="5" BackgroundColor="White" x:Name="rectangle114" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="6" BackgroundColor="White" x:Name="rectangle115" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="7" BackgroundColor="White" x:Name="rectangle116" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="8" BackgroundColor="White" x:Name="rectangle117" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="9" BackgroundColor="White" x:Name="rectangle118" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="10" BackgroundColor="White" x:Name="rectangle119" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="9" Grid.Column="11" BackgroundColor="White" x:Name="rectangle120" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="0" BackgroundColor="White" x:Name="rectangle121" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="1" BackgroundColor="White" x:Name="rectangle122" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="2" BackgroundColor="White" x:Name="rectangle123" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="3" BackgroundColor="White" x:Name="rectangle124" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="4" BackgroundColor="White" x:Name="rectangle125" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="5" BackgroundColor="White" x:Name="rectangle126" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="6" BackgroundColor="White" x:Name="rectangle127" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="7" BackgroundColor="White" x:Name="rectangle128" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="8" BackgroundColor="White" x:Name="rectangle129" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="9" BackgroundColor="White" x:Name="rectangle130" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="10" BackgroundColor="White" x:Name="rectangle131" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="10" Grid.Column="11" BackgroundColor="White" x:Name="rectangle132" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="0" BackgroundColor="White" x:Name="rectangle133" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="1" BackgroundColor="White" x:Name="rectangle134" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="2" BackgroundColor="White" x:Name="rectangle135" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="3" BackgroundColor="White" x:Name="rectangle136" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="4" BackgroundColor="White" x:Name="rectangle137" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="5" BackgroundColor="White" x:Name="rectangle138" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="6" BackgroundColor="White" x:Name="rectangle139" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="7" BackgroundColor="White" x:Name="rectangle140" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="8" BackgroundColor="White" x:Name="rectangle141" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="9" BackgroundColor="White" x:Name="rectangle142" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="10" BackgroundColor="White" x:Name="rectangle143" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                        <Button HeightRequest="35" WidthRequest="35" Grid.Row="11" Grid.Column="11" BackgroundColor="White" x:Name="rectangle144" Clicked="Square_MouseLeftButtonDown" Focused="Square_MouseEnter" Unfocused="Square_MouseLeave"/>
+                    </Grid>
+                </Border>
+
+                <!-- game details -->
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="320"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Tracking grid -->
+                    <Border Stroke="Black" StrokeThickness="2" Padding="5" Grid.Row="0">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="1" x:Name="label2"  Text="Name"  />
+                            <Label Grid.Row="0" Grid.Column="2" x:Name="label3"  Text="Shares" />
+                            <Label Grid.Row="0" Grid.Column="3" x:Name="label4"  Text="Price" />
+                            <Label Grid.Row="0" Grid.Column="4" x:Name="label1"  Text="Size" />
+                            <Label Grid.Row="0" Grid.Column="5" x:Name="label5"  Text="Merge Bonus" />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="1" Grid.Column="0" BackgroundColor="Red" x:Name="Apple_Square"  />
+                            <Label Grid.Row="1" Grid.Column="1" x:Name="Apple_Lable"  Text="Apple Corp"  />
+                            <Label Grid.Row="1" Grid.Column="2" x:Name="Apple_Shares"  Text="89" />
+                            <Label Grid.Row="1" Grid.Column="3" x:Name="Apple_Price"  Text="$600" />
+                            <Label Grid.Row="1" Grid.Column="4" Text="144" x:Name="Apple_Size"  />
+                            <Label Grid.Row="1" Grid.Column="5" Text="$12,000/$6,000" x:Name="Apple_Bonus"  />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="2" Grid.Column="0" BackgroundColor="#FF0028FF" x:Name="Berry_Square"  />
+                            <Label Grid.Row="2" Grid.Column="1" Text="Berry Corp" x:Name="Berry_label"   />
+                            <Label Grid.Row="2" Grid.Column="2" Text="89" x:Name="Berry_Shares"  />
+                            <Label Grid.Row="2" Grid.Column="3" Text="$600" x:Name="Berry_Price"   />
+                            <Label Grid.Row="2" Grid.Column="4" Text="144" x:Name="Berry_Size"  />
+                            <Label Grid.Row="2" Grid.Column="5" Text="$12,000/$6,000" x:Name="Berry_Bonus" />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="3" Grid.Column="0" BackgroundColor="#FFFFEC00" x:Name="Canary_Square"  />
+                            <Label Grid.Row="3" Grid.Column="1" Text="Canary Corp" x:Name="Canary_label"  />
+                            <Label Grid.Row="3" Grid.Column="2" Text="89" x:Name="Canary_Shares"   />
+                            <Label Grid.Row="3" Grid.Column="3" Text="$600" x:Name="Canary_Price"   />
+                            <Label Grid.Row="3" Grid.Column="4" Text="144" x:Name="Canary_Size"   />
+                            <Label Grid.Row="3" Grid.Column="5" Text="$12,000/$6,000" x:Name="Canary_Bonus"  />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="4" Grid.Column="0" BackgroundColor="#FFF000FF" x:Name="Drip_Square"  />
+                            <Label Grid.Row="4" Grid.Column="1" Text="Drip Corp" x:Name="Drip_label"   />
+                            <Label Grid.Row="4" Grid.Column="2" Text="89" x:Name="Drip_Shares"   />
+                            <Label Grid.Row="4" Grid.Column="3" Text="$600" x:Name="Drip_Price"   />
+                            <Label Grid.Row="4" Grid.Column="4" Text="144" x:Name="Drip_Size"   />
+                            <Label Grid.Row="4" Grid.Column="5" Text="$12,000/$6,000" x:Name="Drip_Bonus"   />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="5" Grid.Column="0" BackgroundColor="#FF3AFF00" x:Name="Easy_Square"  />
+                            <Label Grid.Row="5" Grid.Column="1" Text="Easy Corp" x:Name="Easy_label"  />
+                            <Label Grid.Row="5" Grid.Column="2" Text="89" x:Name="Easy_Shares"  />
+                            <Label Grid.Row="5" Grid.Column="3" Text="$600" x:Name="Easy_Price"  />
+                            <Label Grid.Row="5" Grid.Column="4" Text="144"  x:Name="Easy_Size"   />
+                            <Label Grid.Row="5" Grid.Column="5" Text="$12,000/$6,000"  x:Name="Easy_Bonus"   />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="6" Grid.Column="0" BackgroundColor="#FF8900FF"  x:Name="Grape_Square"  />
+                            <Label Grid.Row="6" Grid.Column="1" Text="Grape Corp" x:Name="Grape_Label"  />
+                            <Label Grid.Row="6" Grid.Column="2" Text="89" x:Name="Grape_Shares"  />
+                            <Label Grid.Row="6" Grid.Column="3" Text="$600" x:Name="Grape_Price"   />
+                            <Label Grid.Row="6" Grid.Column="4" Text="144" x:Name="Grape_Size"  />
+                            <Label Grid.Row="6" Grid.Column="5" Text="$12,000/$6,000" x:Name="Grape_Bonus"  />
+
+                            <Button HeightRequest="25" WidthRequest="25" Grid.Row="7" Grid.Column="0" BackgroundColor="Black" x:Name="Frozen_Square"  />
+                            <Label Grid.Row="7" Grid.Column="1" Text="Frozen Corp" x:Name="Frozen_label"  />
+                            <Label Grid.Row="7" Grid.Column="2" Text="89" x:Name="Frozen_Shares"  />
+                            <Label Grid.Row="7" Grid.Column="3" Text="$600" x:Name="Frozen_Price"  />
+                            <Label Grid.Row="7" Grid.Column="4" Text="144" x:Name="Frozen_Size"  />
+                            <Label Grid.Row="7" Grid.Column="5" Text="$12,000/$6,000"  x:Name="Frozen_Bonus"   />
+
+                        </Grid>
+                    </Border>
+
+                    <!-- plyer stats -->
+                    <Border Stroke="Black" StrokeThickness="2" Padding="5" Grid.Row="1">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="125"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" x:Name="label12" Text="Name:" VerticalOptions="Center" />
+                                <Label Grid.Row="0" Grid.Column="1" x:Name="PlayerName" Text="Jeff" VerticalOptions="Center"/>
+                                <Label Grid.Row="0" Grid.Column="2" Text="Cash:" x:Name="label13" VerticalOptions="Center"/>
+                                <Label Grid.Row="0" Grid.Column="3" Text="$3,500" x:Name="Cash" VerticalOptions="Center"/>
+                                <Label Grid.Row="0" Grid.Column="4" Text="NetWorth:" x:Name="label14" VerticalOptions="Center" />
+                                <Label Grid.Row="0" Grid.Column="5" Text="$3,500" x:Name="NetWorth" VerticalOptions="Center" />
+                                <Button Grid.Row="0" Grid.Column="6" HeightRequest="35" WidthRequest="120" VerticalOptions="Center" Text="Shuffle Tiles" x:Name="ShuffleTilesButton" Clicked="ShuffleTilesButton_Click" />
+                            </Grid>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Grid.Column="0" HeightRequest="25" WidthRequest="25" BackgroundColor="Red"  x:Name="rectangle148" />
+                                <Label Grid.Column="1" Text="144" x:Name="Apple_Count"   />
+                                <Button Grid.Column="2" HeightRequest="25" WidthRequest="25" BackgroundColor="#FF0028FF"  x:Name="rectangle149" />
+                                <Label Grid.Column="3" Text="144" x:Name="Berry_Count"  />
+                                <Button Grid.Column="4" HeightRequest="25" WidthRequest="25" BackgroundColor="#FFFFEC00"  x:Name="rectangle150" />
+                                <Label Grid.Column="5" Text="144" x:Name="Canary_Count"   />
+                                <Button Grid.Column="6" HeightRequest="25" WidthRequest="25" BackgroundColor="#FFF000FF" x:Name="rectangle151" />
+                                <Label Grid.Column="7" Text="144" x:Name="Drip_Count"  />
+                                <Button Grid.Column="8" HeightRequest="25" WidthRequest="25" BackgroundColor="#FF3AFF00" x:Name="rectangle152" />
+                                <Label Grid.Column="9" Text="144" x:Name="Easy_Count"  />
+                                <Button Grid.Column="10" HeightRequest="25" WidthRequest="25" BackgroundColor="#FF8900FF" x:Name="rectangle154" />
+                                <Label Grid.Column="11" Text="144" x:Name="Grape_Count"  />
+                                <Button Grid.Column="12" HeightRequest="25" WidthRequest="25" BackgroundColor="Black" x:Name="rectangle153" />
+                                <Label Grid.Column="13" Text="144" x:Name="Frozen_Count"  />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+
+            <!-- status -->
+            <Label Grid.Row="1" x:Name="Status"  Text=" " />
+            <Label Grid.Row="2" x:Name="AdditionalMessage"  Text="" TextColor="#9CFF0A0A" IsVisible="true"/>
+
+            <!-- other controls -->
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- buy panel -->
+                <Border Background="#918A93DC" Padding="5" x:Name="BuyGrid" IsVisible="False" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" x:Name="label7"  Text="Buy shares:" />
+                        <Picker Grid.Row="0" Grid.Column="1" x:Name="BuyCorp1_List"  SelectedIndexChanged="BuyCorp_List_SelectionChanged" />
+                        <Picker Grid.Row="0" Grid.Column="2" x:Name="BuyCorp2_List"  SelectedIndexChanged="BuyCorp_List_SelectionChanged" />
+                        <Picker Grid.Row="0" Grid.Column="3" x:Name="BuyCorp3_List"   SelectedIndexChanged="BuyCorp_List_SelectionChanged"/>
+                        <Label Grid.Row="0" Grid.Column="4" x:Name="ShareCost"  Text="$" />
+                        <Button Grid.Row="0" Grid.Column="5" Text="Buy" x:Name="BuyButton"  Clicked="BuyButton_Click" />
+                        <Button Grid.Row="0" Grid.Column="6" Text="Clear" x:Name="ClearButton"  Clicked="ClearButton_Click" />
+                    </Grid>
+                </Border>
+
+                <!-- choose corp -->
+                <Border Background="#918A93DC" x:Name="ChooseCorpGrid" IsVisible="False" Padding="5" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" x:Name="label8"  Text="Choose Corporation:" />
+                        <Picker Grid.Row="0" Grid.Column="1" x:Name="NewCorp_List"  />
+                        <Button Grid.Row="0" Grid.Column="2" Text="Choose" x:Name="NewCorpButton"  Clicked="NewCorpButton_Click" />
+                    </Grid>
+                </Border>
+
+                <!-- corp merger -->
+                <Border Background="#918A93DC" x:Name="TradeGrid" IsVisible="False" Padding="5" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" x:Name="label9"  Text="Name:" />
+                        <Label Grid.Row="0" Grid.Column="1" x:Name="TradeName"  />
+                        <Label Grid.Row="0" Grid.Column="2" x:Name="label10"  Text="Corporation merged/parent:" />
+                        <Label Grid.Row="0" Grid.Column="3" x:Name="TradeCorp"  Text=""/>
+                        <Picker Grid.Row="0" Grid.Column="4" x:Name="TradeNumber_List"  SelectedIndexChanged="TradeNumber_List_SelectionChanged" />
+                        <Label Grid.Row="0" Grid.Column="5" x:Name="label11"  Text="for" />
+                        <Label Grid.Row="0" Grid.Column="6" x:Name="TradeResult"  Text="12" />
+                        <Button Grid.Row="0" Grid.Column="7" Text="Trade" x:Name="TradeButton"  Clicked="TradeButton_Click" />
+                        <Label Grid.Row="1" Grid.Column="0" x:Name="TradeBonusKind"  />
+                        <Label Grid.Row="1" Grid.Column="1" x:Name="TradeBonusAmount"  />
+                    </Grid>
+                </Border>
+
+                <!-- selling -->
+                <Border Background="#918A93DC" IsVisible="False" x:Name="SellGrid" Padding="5" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="" x:Name="SellName"  />
+                        <Label Grid.Row="0" Grid.Column="1" Text="Name:" x:Name="label15"  />
+                        <Label Grid.Row="0" Grid.Column="2" x:Name="label16"  Text="sell" />
+                        <Picker Grid.Row="0" Grid.Column="3" x:Name="SellNumber_List"  SelectedIndexChanged="SellNumber_List_SelectionChanged" />
+                        <Label Grid.Row="0" Grid.Column="4" Text="shares of" x:Name="label17"  />
+                        <Label Grid.Row="0" Grid.Column="5" Text="Label" x:Name="SellCorp"  />
+                        <Label Grid.Row="0" Grid.Column="6" x:Name="label19"  Text="for" />
+                        <Label Grid.Row="0" Grid.Column="7" x:Name="SellPrice"  Text="$5000" />
+                        <Button Grid.Row="0" Grid.Column="8" Text="Sell" x:Name="SellButton"  Clicked="SellButton_Click" />
+                    </Grid>
+                </Border>
+
+                <!-- exit -->
+                <Border x:Name="ExitGameGrid" IsVisible="False" Background="#918A93DC" Padding="5" Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" x:Name="label6"  Text="Would you like to exit?" />
+                        <Button Grid.Row="0" Grid.Column="1" Text="Yes" x:Name="YesButton"  Clicked="YesButton_Click" />
+                        <Button Grid.Row="0" Grid.Column="2" Text="No" x:Name="NoButton"  Clicked="NoButton_Click" />
+                    </Grid>
+                </Border>
+
+            </Grid>
+        </Grid>
+
+        <!-- winner -->
+        <Border x:Name="FinalDisplayGrid" IsVisible="False" Background="#E1293BBC" Margin="0,8.878,0,0" Padding="5" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- header -->
+                <Label Grid.Row="0" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Name:" />
+                <Label Grid.Row="0" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Cash:" />
+                <Label Grid.Row="0" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Networth:" />
+                <Button Grid.Row="0" Grid.Column="3" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="Red" x:Name="rectangle155" />
+                <Button Grid.Row="0" Grid.Column="4" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="#FF0028FF" x:Name="rectangle156" />
+                <Button Grid.Row="0" Grid.Column="5" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="#FFFFEC00" x:Name="rectangle157" />
+                <Button Grid.Row="0" Grid.Column="6" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="#FFF000FF" x:Name="rectangle158" />
+                <Button Grid.Row="0" Grid.Column="7" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="#FF3AFF00" x:Name="rectangle159" />
+                <Button Grid.Row="0" Grid.Column="8" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="Black" x:Name="rectangle160" />
+                <Button Grid.Row="0" Grid.Column="9" HorizontalOptions="Center" HeightRequest="35" WidthRequest="35" BackgroundColor="#FF8900FF" x:Name="rectangle161" />
+
+                <!-- player1 -->
+                <Label Grid.Row="1" Grid.Column="0" TextColor="white" Text="Jeff" x:Name="Player1_Name" />
+                <Label Grid.Row="1" Grid.Column="1" TextColor="white" Text="$3,500" x:Name="Player1_Cash" />
+                <Label Grid.Row="1" Grid.Column="2" TextColor="white" Text="$3,500" x:Name="Player1_NetWorth" />
+                <Label Grid.Row="1" Grid.Column="3" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Apple" />
+                <Label Grid.Row="1" Grid.Column="4" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Berry" />
+                <Label Grid.Row="1" Grid.Column="5" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Canary" />
+                <Label Grid.Row="1" Grid.Column="6" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Drip" />
+                <Label Grid.Row="1" Grid.Column="7" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Easy" />
+                <Label Grid.Row="1" Grid.Column="8" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Frozen" />
+                <Label Grid.Row="1" Grid.Column="9" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player1_Grape" />
+
+                <!-- player 2 -->
+                <Label Grid.Row="2" Grid.Column="0" TextColor="white" Text="Jeff" x:Name="Player2_Name" />
+                <Label Grid.Row="2" Grid.Column="1" TextColor="white" Text="$3,500" x:Name="Player2_Cash" />
+                <Label Grid.Row="2" Grid.Column="2" TextColor="white" Text="$3,500" x:Name="Player2_NetWorth" />
+                <Label Grid.Row="2" Grid.Column="3" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Apple" />
+                <Label Grid.Row="2" Grid.Column="4" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Berry" />
+                <Label Grid.Row="2" Grid.Column="5" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Canary" />
+                <Label Grid.Row="2" Grid.Column="6" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Drip" />
+                <Label Grid.Row="2" Grid.Column="7" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Easy" />
+                <Label Grid.Row="2" Grid.Column="8" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Frozen" />
+                <Label Grid.Row="2" Grid.Column="9" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player2_Grape" />
+
+                <!-- player 3 -->
+                <Label Grid.Row="3" Grid.Column="0" TextColor="white" Text="Jeff" x:Name="Player3_Name" />
+                <Label Grid.Row="3" Grid.Column="1" TextColor="white" Text="$3,500" x:Name="Player3_Cash" />
+                <Label Grid.Row="3" Grid.Column="2" TextColor="white" Text="$3,500" x:Name="Player3_NetWorth" />
+                <Label Grid.Row="3" Grid.Column="3" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Apple"/>
+                <Label Grid.Row="3" Grid.Column="4" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Berry" />
+                <Label Grid.Row="3" Grid.Column="5" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Canary" />
+                <Label Grid.Row="3" Grid.Column="6" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Drip" />
+                <Label Grid.Row="3" Grid.Column="7" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Easy" />
+                <Label Grid.Row="3" Grid.Column="8" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Frozen"/>
+                <Label Grid.Row="3" Grid.Column="9" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player3_Grape" />
+
+                <!-- player 4 -->
+                <Label Grid.Row="4" Grid.Column="0" TextColor="white" Text="Jeff" x:Name="Player4_Name" />
+                <Label Grid.Row="4" Grid.Column="1" TextColor="white" Text="$3,500" x:Name="Player4_Cash" />
+                <Label Grid.Row="4" Grid.Column="2" TextColor="white" Text="$3,500" x:Name="Player4_NetWorth" />
+                <Label Grid.Row="4" Grid.Column="3" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Apple" />
+                <Label Grid.Row="4" Grid.Column="4" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Berry" />
+                <Label Grid.Row="4" Grid.Column="5" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Canary" />
+                <Label Grid.Row="4" Grid.Column="6" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Drip" />
+                <Label Grid.Row="4" Grid.Column="7" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Easy" />
+                <Label Grid.Row="4" Grid.Column="8" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Frozen" />
+                <Label Grid.Row="4" Grid.Column="9" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player4_Grape" />
+
+                <!-- player 5 -->
+                <Label Grid.Row="5" Grid.Column="0" TextColor="white" Text="Jeff" x:Name="Player5_Name" />
+                <Label Grid.Row="5" Grid.Column="1" TextColor="white" Text="$3,500" x:Name="Player5_Cash" />
+                <Label Grid.Row="5" Grid.Column="2" TextColor="white" Text="$3,500" x:Name="Player5_NetWorth" />
+                <Label Grid.Row="5" Grid.Column="3" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Apple" />
+                <Label Grid.Row="5" Grid.Column="4" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Berry" />
+                <Label Grid.Row="5" Grid.Column="5" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Canary" />
+                <Label Grid.Row="5" Grid.Column="6" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Drip" />
+                <Label Grid.Row="5" Grid.Column="7" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Easy"/>
+                <Label Grid.Row="5" Grid.Column="8" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Frozen" />
+                <Label Grid.Row="5" Grid.Column="9" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player5_Grape"/>
+
+                <!-- player 6 -->
+                <Label Grid.Row="6" Grid.Column="0" TextColor="white" Text="Jeff" x:Name="Player6_Name" />
+                <Label Grid.Row="6" Grid.Column="1" TextColor="white" Text="$3,500" x:Name="Player6_Cash" />
+                <Label Grid.Row="6" Grid.Column="2" TextColor="white" Text="$3,500" x:Name="Player6_NetWorth" />
+                <Label Grid.Row="6" Grid.Column="3" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Apple" />
+                <Label Grid.Row="6" Grid.Column="4" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Berry" />
+                <Label Grid.Row="6" Grid.Column="5" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Canary" />
+                <Label Grid.Row="6" Grid.Column="6" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Drip" />
+                <Label Grid.Row="6" Grid.Column="7" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Easy" />
+                <Label Grid.Row="6" Grid.Column="8" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Frozen" />
+                <Label Grid.Row="6" Grid.Column="9" TextColor="white" HorizontalOptions="Center" Text="24" x:Name="Player6_Grape" />
+
+                <!-- winner -->
+                <Label Grid.Row="7" Grid.Column="0" TextColor="white" HeightRequest="40" x:Name="label70" Text="The Winner is " />
+                <Label Grid.Row="7" Grid.Column="1" TextColor="Black" HeightRequest="40" x:Name="WinnerName" Background="Yellow" />
+                <Button Grid.Row="7" Grid.Column="2" Text="Play again?" x:Name="PlayAgainButton" Clicked="StartButton_Click" />
+                <Button Grid.Row="7" Grid.Column="3" Text="Start Over?" x:Name="StartOverButton" Clicked="StartOverButton_Click" />
+            </Grid>
+        </Border>
+
+        <!-- start -->
+        <Border x:Name="StartGrid"  Background="#E1293BBC" IsVisible="True" Margin="0,8.878,0,0" Padding="5" Grid.Row="1">
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" x:Name="textBlock1" Text="Acquire consists of building and merging corporations.  The object of the game is to acquire the largest net worth.  There are a few simple rules which govern the game:" TextColor="White" FontFamily="Arial Black" FontSize="18" LineBreakMode="WordWrap" />
+                    <Label Grid.Column="0" Grid.Row="1" FontFamily="Arial Black" FontSize="18" TextColor="White" x:Name="textBlock2" Text="1. Each player has the opportunity to place 1 tile per turn.  Every consecutive tile placement constitutes a new corporation." LineBreakMode="WordWrap" />
+                    <Label Grid.Column="0" Grid.Row="2" FontFamily="Arial Black" FontSize="18" TextColor="White" x:Name="textBlock3" Text="2. After placing a tile you can buy 3 shares of stock in any active corporation." LineBreakMode="WordWrap" />
+                    <Label Grid.Column="0" Grid.Row="3" FontFamily="Arial Black" FontSize="18" TextColor="White" x:Name="textBlock4" Text="3. There are a few rules for merging corporations.  The larger corporation becomes the parent, and no corporation larger than 11 can be merged." LineBreakMode="WordWrap"  />
+                    <Label Grid.Column="0" Grid.Row="4" x:Name="StartStatus" Text="" TextColor="Red" FontSize="18" FontAttributes="Bold" LineBreakMode="WordWrap" />
+                </Grid>
+
+                <Grid Grid.Column="1" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Entry Grid.Column="0" Grid.Row="0" HeightRequest="35" x:Name="Player1_Text" Text="Player 1" />
+                    <Picker Grid.Column="1" Grid.Row="0"  x:Name="Player1_List" WidthRequest="250"/>
+                    <Entry Grid.Column="0" Grid.Row="1" HeightRequest="35" x:Name="Player2_Text" Text="Player 2" />
+                    <Picker Grid.Column="1" Grid.Row="1" x:Name="Player2_List" WidthRequest="250" />
+                    <Entry Grid.Column="0" Grid.Row="2" HeightRequest="35" x:Name="Player3_Text" Text="Player 3" />
+                    <Picker Grid.Column="1" Grid.Row="2" x:Name="Player3_List" WidthRequest="250" />
+                    <Entry Grid.Column="0" Grid.Row="3" HeightRequest="35" x:Name="Player4_Text" Text="Player 4" />
+                    <Picker Grid.Column="1" Grid.Row="3" x:Name="Player4_List" WidthRequest="250" />
+                    <Entry Grid.Column="0" Grid.Row="4" HeightRequest="35" x:Name="Player5_Text" Text="Player 5"  />
+                    <Picker Grid.Column="1" Grid.Row="4" x:Name="Player5_List" WidthRequest="250" />
+                    <Entry Grid.Column="0" Grid.Row="5" HeightRequest="35" x:Name="Player6_Text" Text="Player 6" />
+                    <Picker Grid.Column="1" Grid.Row="5" x:Name="Player6_List" WidthRequest="250" />
+                    <Button Grid.Column="0" Grid.Row="6" Text="Play"  x:Name="StartButton" Clicked="StartButton_Click" />
+                    <Button Grid.Column="1" Grid.Row="6" Text="Repeat Play" x:Name="RepeatButton" Clicked="RepeatButton_Click" />
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- win tally -->
+        <Border x:Name="WinGrid" Background="#E1293BBC" IsVisible="False" Margin="0,8.878,0,0" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Grid.Row="0" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="label22"  Text="Name:" />
+                <Label Grid.Row="0" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer1_Name"  />
+                <Label Grid.Row="0" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="label26"  Text="Wins:" />
+                <Label Grid.Row="0" Grid.Column="3" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer1_Wins"  />
+                <Label Grid.Row="0" Grid.Column="4" TextColor="white" FontSize="18" FontAttributes="Bold" Text="NetWorth:" x:Name="label23"  />
+                <Label Grid.Row="0" Grid.Column="5" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer1_NetWorth"  />
+                <Label Grid.Row="1" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Name:" x:Name="label24"  />
+                <Label Grid.Row="1" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer2_Name"  />
+                <Label Grid.Row="1" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Wins:" x:Name="label27"  />
+                <Label Grid.Row="1" Grid.Column="3" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer2_Wins"  />
+                <Label Grid.Row="1" Grid.Column="4" TextColor="white" FontSize="18" FontAttributes="Bold" Text="NetWorth:" x:Name="label31"  />
+                <Label Grid.Row="1" Grid.Column="5" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer2_NetWorth"  />
+                <Label Grid.Row="2" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Name:" x:Name="label34"  />
+                <Label Grid.Row="2" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer3_Name"  />
+                <Label Grid.Row="2" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Wins:" x:Name="label37"  />
+                <Label Grid.Row="2" Grid.Column="3" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer3_Wins"  />
+                <Label Grid.Row="2" Grid.Column="4" TextColor="white" FontSize="18" FontAttributes="Bold" Text="NetWorth:" x:Name="label39"  />
+                <Label Grid.Row="2" Grid.Column="5" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer3_NetWorth"  />
+                <Label Grid.Row="3" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Name:" x:Name="label41"  />
+                <Label Grid.Row="3" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer4_Name"  />
+                <Label Grid.Row="3" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Wins:" x:Name="label43"  />
+                <Label Grid.Row="3" Grid.Column="3" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer4_Wins"  />
+                <Label Grid.Row="3" Grid.Column="4" TextColor="white" FontSize="18" FontAttributes="Bold" Text="NetWorth:" x:Name="label46"  />
+                <Label Grid.Row="3" Grid.Column="5" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer4_NetWorth"  />
+                <Label Grid.Row="4" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Name:" x:Name="label49"  />
+                <Label Grid.Row="4" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer5_Name" />
+                <Label Grid.Row="4" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Wins:" x:Name="label51"   />
+                <Label Grid.Row="4" Grid.Column="3" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer5_Wins"   />
+                <Label Grid.Row="4" Grid.Column="4" TextColor="white" FontSize="18" FontAttributes="Bold" Text="NetWorth:" x:Name="label53"  />
+                <Label Grid.Row="4" Grid.Column="5" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer5_NetWorth"  />
+                <Label Grid.Row="5" Grid.Column="0" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Name:" x:Name="label55"   />
+                <Label Grid.Row="5" Grid.Column="1" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer6_Name" />
+                <Label Grid.Row="5" Grid.Column="2" TextColor="white" FontSize="18" FontAttributes="Bold" Text="Wins:" x:Name="label58"  />
+                <Label Grid.Row="5" Grid.Column="3" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer6_Wins"  />
+                <Label Grid.Row="5" Grid.Column="4" TextColor="white" FontSize="18" FontAttributes="Bold" Text="NetWorth:" x:Name="label61"  />
+                <Label Grid.Row="5" Grid.Column="5" TextColor="white" FontSize="18" FontAttributes="Bold" x:Name="WinPlayer6_NetWorth"  />
+
+            </Grid>
+        </Border>
+
+        <!-- title -->
+        <Label Grid.Row="0" x:Name="textBlock5" Text="A C Q U I R E" TextColor="Black" FontFamily="Lucida Sans Unicode" FontSize="28" />
+
+        <!-- off screen helpers-->
+        <Button IsVisible="false" BackgroundColor="White" Margin="-40,0,0,0" x:Name="NA_Square" />
+        <Button IsVisible="false" BackgroundColor="#FFEDB553" Margin="-40,20,0,0" x:Name="Selected_Square"  />
+        <Button IsVisible="false" BackgroundColor="Silver" Margin="-40,9.878,0,0" x:Name="UnClaimed_Square" />
+        <Button IsVisible="false" BackgroundColor="#FFF5A422" Margin="-40,30.878,0,0" x:Name="Selection_Square" />
+        <Label IsVisible="False" Margin="714,0,-354,0" x:Name="GameSetup_Message"  Text="Select 2 to 6 players to compete head to head to acquire the most wealth" />
+        <Label IsVisible="False" Text="Select from one of your highlighted tiles to build large corporations.  Use Shuffle to grab different tiles." Margin="714,26,-354,0" x:Name="PlaceTile_Message" />
+        <Label IsVisible="False" Text="After a successful merger you have the option to sell shares of the old corporation before they are worthless." Margin="713,20.878,-353,0" x:Name="SellShares_Message" />
+        <Label IsVisible="False"  Text="Choose a name and share price structure for this new corporation." Margin="713,46.878,-353,0" x:Name="ChooseCorp_Message" />
+        <Label IsVisible="False"  Text="Buy shares in one of the active corporations.  If no shares are avaliable or you have insuficient funds buy 0." Margin="713,72.878,-353,0" x:Name="BuyShares_Message" />
+        <Label IsVisible="False"  Text="Choose the parent corporation for the newly merged corporation." Margin="713,98.878,-353,0" x:Name="ChooseParentCorp_Message" />
+        <Label IsVisible="False"  Text="Trade shares 2:1 from the merged corporation into the newly created corporation." Margin="714,124.878,-354,0" x:Name="TradeShares_Message" />
+        <Label IsVisible="False"  Text=" " Margin="713,159.878,-353,0" x:Name="NextTurn_Message" />
+        <Label IsVisible="False"  Text="The game has reached the point where a winner can be choosen, do you wish to continue playing?" Margin="713,185.878,-353,0" x:Name="ExitGame_Message" />
+        <Label IsVisible="False"  Text="Congradulations, this round has come to a successful conclusion." Margin="713,211.878,-353,0" x:Name="Done_Message" />
+        <Label IsVisible="False"  Text=" " Margin="714,239.878,-355,0" x:Name="Blank_Message" />
+        <Label IsVisible="False"  Text="An avaliable corporation is required to complete this placement, there are none avaliable, please select again." Margin="714,261.878,-355,0" x:Name="NoAvaliableCorps_Message" />
+        <Label IsVisible="False"  Text="Corporations larger than 11 cannot be merged into another corporation, choose another tile." Margin="714,283.878,-355,0" x:Name="InvalidMerger_Message" />
+        <Label IsVisible="False"  Text="Insufficient cash to complete this purchase, please make another selection." Margin="714,305.878,-355,0" x:Name="InsufficientFunds_Message" />
+        <Label IsVisible="False"  Margin="713,328.878,0,0" x:Name="StartErr_Message"  Text="Please select at least 2 players" />
+    </Grid>
+</ContentPage>

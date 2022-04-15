@@ -635,11 +635,6 @@ namespace Acquire.Engine
         {
             get
             {
-                if (AcquireGameStates.ChooseCorp != state 
-                    && AcquireGameStates.ChooseParentCorp != state
-                    && AcquireGameStates.TradeShares != state
-                    && AcquireGameStates.SellShares != state) throw new ArgumentException("AcquireGame not in the right stete: " + state);
-
                 return currentTile;
             }
         }

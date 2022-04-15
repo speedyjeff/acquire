@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32201.480
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquire", "Acquire\Acquire.csproj", "{AEA396C2-1888-44A2-9602-6A0687CDD160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquire.Engine", "Acquire.Engine\Acquire.Engine.csproj", "{19171100-A61A-4D9F-9816-EE17F91A18BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acquire.Engine", "Acquire.Engine\Acquire.Engine.csproj", "{19171100-A61A-4D9F-9816-EE17F91A18BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcquireX", "AcquireX\AcquireX.csproj", "{70FD5D26-74C7-4E26-A753-86863F800C3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,12 @@ Global
 		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19171100-A61A-4D9F-9816-EE17F91A18BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
