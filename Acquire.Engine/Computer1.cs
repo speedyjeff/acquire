@@ -5,13 +5,18 @@ namespace Acquire.Engine
 {
     public class Computer1 : IComputer
     {
-        private Random rand = new Random();
+        private Random rand;
 
         public PlayerStats Player { get; set; }
         public CorpStats[] Corporations { get; set; }
         public CorpNames[,] Board { get; set; }
         public int NumberPlayers { get; set; }
         public int ID { get; set; }
+
+        public Computer1(int seed = 0)
+        {
+            rand = (seed > 0) ? new Random(seed) : new Random();
+        }
 
         // choose a tile
         public Square SelectSquare(Square[] tiles)

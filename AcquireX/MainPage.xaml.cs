@@ -681,8 +681,14 @@ namespace AcquireX
                 return;
             }
 
+#if PREDICTABLE_EXECUTION
+            var RandomSeed = 123456;
+#else
+            var RandomSeed = 0;
+#endif
+
             // start Acquire game engine
-            game = new AcquireGame();
+            game = new AcquireGame(RandomSeed);
 
             // init game state
             computers.Clear();
@@ -699,7 +705,7 @@ namespace AcquireX
                 switch (playerNames[npairs[0]])
                 {
                     case Oppenents.Random:
-                        computers.Add(id, new Computer1());
+                        computers.Add(id, new Computer1(RandomSeed));
                         break;
                     case Oppenents.Computer2:
                         computers.Add(id, new Computer2());

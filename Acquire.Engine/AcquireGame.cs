@@ -243,7 +243,7 @@ namespace Acquire.Engine
         private int currentTile;
         private Random rand;
 
-        public TileCollection()
+        public TileCollection(int seed = 0)
         {
             currentTile = -1;
 
@@ -259,7 +259,7 @@ namespace Acquire.Engine
             }
 
             // randomize the tile collection
-            rand = new Random();
+            rand = (seed > 0) ? new Random(seed) : new Random();
             for (int i=0; i<500; i++)
             {
                 int i1 = rand.Next() % (AcquireConstants.BoardHeight*AcquireConstants.BoardWidth);
@@ -552,7 +552,7 @@ namespace Acquire.Engine
         private Square currentTile;
         private CorpNames parentCorporation;
 
-        public AcquireGame()
+        public AcquireGame(int seed = 0)
         {
             // initialize content
             corporations = new CorpStats[AcquireConstants.CorpCount];
@@ -561,7 +561,7 @@ namespace Acquire.Engine
             players = new List<PlayerStats>();
             state = AcquireGameStates.GameSetup;
             currentPlayer = -1;
-            tiles = new TileCollection();
+            tiles = new TileCollection(seed);
             board = new Board();
             parentCorps = null;
             tradeShares = null;

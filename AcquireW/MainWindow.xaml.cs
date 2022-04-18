@@ -679,11 +679,11 @@ namespace Acquire
 #if PREDICTABLE_EXECUTION
         var RandomSeed = 123456;
 #else
-            var RandomSeed = 0;
+        var RandomSeed = 0;
 #endif
 
-            // start Acquire game engine
-            game = new AcquireGame(RandomSeed);
+        // start Acquire game engine
+        game = new AcquireGame(RandomSeed);
 
             // init game state
             computers.Clear();

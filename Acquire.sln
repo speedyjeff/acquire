@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acquire", "Acquire\Acquire.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acquire.Engine", "Acquire.Engine\Acquire.Engine.csproj", "{19171100-A61A-4D9F-9816-EE17F91A18BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcquireX", "AcquireX\AcquireX.csproj", "{70FD5D26-74C7-4E26-A753-86863F800C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcquireX", "AcquireX\AcquireX.csproj", "{70FD5D26-74C7-4E26-A753-86863F800C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcquireW", "AcquireW\AcquireW.csproj", "{59291627-101E-4CB6-9EBA-13EBF8C6859E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70FD5D26-74C7-4E26-A753-86863F800C3B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{59291627-101E-4CB6-9EBA-13EBF8C6859E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59291627-101E-4CB6-9EBA-13EBF8C6859E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59291627-101E-4CB6-9EBA-13EBF8C6859E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59291627-101E-4CB6-9EBA-13EBF8C6859E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
