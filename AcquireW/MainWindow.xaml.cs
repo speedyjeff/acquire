@@ -646,7 +646,10 @@ namespace Acquire
             }
 
             // display the selected tile
-            squares[game.CurrentTile.Dim0, game.CurrentTile.Dim1].Fill = GetItem<Rectangle>(Lselected, Lcolor).Fill;
+            if (game.State != AcquireGameStates.PlaceTile)
+            {
+                squares[game.CurrentTile.Dim0, game.CurrentTile.Dim1].Fill = GetItem<Rectangle>(Lselected, Lcolor).Fill;
+            }
         }
 
         // manipulation

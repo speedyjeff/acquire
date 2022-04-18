@@ -651,7 +651,10 @@ namespace AcquireX
             }
 
             // display the selected tile
-            squares[game.CurrentTile.Dim0, game.CurrentTile.Dim1].BackgroundColor = GetItem<Button>(Lselected, Lcolor).BackgroundColor;
+            if (game.State != AcquireGameStates.PlaceTile)
+            {
+                squares[game.CurrentTile.Dim0, game.CurrentTile.Dim1].BackgroundColor = GetItem<Button>(Lselected, Lcolor).BackgroundColor;
+            }
         }
 
         // manipulation
